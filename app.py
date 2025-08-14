@@ -51,6 +51,7 @@ recipe_titles = sorted([r.get("title", "Untitled") for r in filtered_recipes])
 selected_title = st.sidebar.selectbox("Select a recipe", [""] + recipe_titles, key="recipe_select")
 
 # ---------- Sidebar: Add New Recipe ----------
+
 st.sidebar.header("+ Add New Recipe")
 with st.sidebar.form("add_recipe_form", clear_on_submit=True):
     title = st.text_input("Recipe Title")
@@ -182,20 +183,30 @@ else:
 # ---------- Style & Color ----------
 st.markdown("""
 <style>
-    /* App background & font defaults */
+
+        /* App background & font defaults */
     .stApp { background-color: #e2ebf3; }
-    html, body, [class*="css"]  { 
-        font-family: 'Helvetica', sans-serif; 
-        color: #556277; 
-    }
-    .stMarkdown, .stMarkdown p, .stMarkdown li { 
-        font-family: 'Helvetica', sans-serif; 
-        color: #556277; 
-    }
+    html, body, [class*="css"] { font-family: 'Helvetica', sans-serif; color: #556277; }
+    .stMarkdown, .stMarkdown p, .stMarkdown li { font-family: 'Helvetica', sans-serif; color: #556277; }
+
+    /* Headings */
+    .stMarkdown h1 { color: #556277; }
+    .stMarkdown h2, .stMarkdown h3 { color: #B15E6C; }
+    
+   
 
     /* Target markdown headings */
     .stMarkdown h1 { color: #556277; }  /* Main title color */
-    .stMarkdown h2, .stMarkdown h3 { color: #B15E6C; } /* Subheading color */
+    .stMarkdown h2,
+    h2 {
+        color: #B15E6C !important;
+        font-family: 'Helvetica', sans-serif !important;
+    }
+    .stMarkdown h3,
+    h3 {
+        color: #B15E6C !important;
+        font-family: 'Helvetica', sans-serif !important;
+    }
 
     /* Sidebar background */
     section[data-testid="stSidebar"] { 
@@ -226,6 +237,15 @@ st.markdown("""
         color: white !important;             /* Button text color */
         background-color: #b15e6c !important;  /* Button background */
         border-radius: 8px !important;
+        font-family: 'Helvetica', sans-serif;
+}
+
+    /* Sidebar input boxes and textareas */
+    section[data-testid="stSidebar"] input,
+    section[data-testid="stSidebar"] textarea,
+    section[data-testid="stSidebar"] select {
+        background-color: white !important;  /* Force white background */
+        color: #556277 !important;           /* Match body text color */
         font-family: 'Helvetica', sans-serif;
 }
       
