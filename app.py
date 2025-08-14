@@ -30,7 +30,7 @@ if os.path.exists(DELETED_FILE):
 else:
     deleted_recipes = []
 
-st.title("Delaney's Cookbook!")
+st.markdown("<h1>Delaney's Cookbook!</h1>", unsafe_allow_html=True)
 
 # Sidebar search box
 search_term = st.sidebar.text_input("Search recipes by title, ingredient, or tag")
@@ -193,15 +193,9 @@ st.markdown("""
         color: #556277; 
     }
 
-    /* Heading styles */
-    h1 { 
-        font-family: 'Helvetica', sans-serif; 
-        color: #556277;  /* Main title color */
-    }
-    h2, h3 { 
-        font-family: 'Helvetica', sans-serif; 
-        color: #B15E6C;  /* Subheading color */
-    }
+    /* Target markdown headings */
+    .stMarkdown h1 { color: #556277; }  /* Main title color */
+    .stMarkdown h2, .stMarkdown h3 { color: #B15E6C; } /* Subheading color */
 
     /* Sidebar background */
     section[data-testid="stSidebar"] { 
@@ -216,6 +210,5 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
-
 
 
