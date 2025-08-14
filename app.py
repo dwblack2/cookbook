@@ -210,30 +210,26 @@ st.markdown("""
     }
 
     /* Sidebar body text */
-section[data-testid="stSidebar"] {
-    color: #556277;        /* Default text color in sidebar */
-    font-family: 'Helvetica', sans-serif;
+    section[data-testid="stSidebar"] {
+        color: #556277;        /* Default text color in sidebar */
+        font-family: 'Helvetica', sans-serif;
 }
 
-/* Sidebar headers (e.g., "Add New Recipe", "Recycling Bin") */
-section[data-testid="stSidebar"] h2 {
-    color: #556277;        /* Match body text color */
-    font-family: 'Helvetica', sans-serif;
+    /* Sidebar headers (e.g., "Add New Recipe", "Recycling Bin") */
+    section[data-testid="stSidebar"] h2 {
+        color: #556277;        /* Match body text color */
+        font-family: 'Helvetica', sans-serif;
 }
 
-/* Buttons inside the sidebar */
-section[data-testid="stSidebar"] button {
-    color: white !important;             /* Button text color */
-    background-color: #b15e6c !important;  /* Button background */
-    border-radius: 8px !important;
-    font-family: 'Helvetica', sans-serif;
+    /* Buttons inside the sidebar */
+    section[data-testid="stSidebar"] button {
+        color: white !important;             /* Button text color */
+        background-color: #b15e6c !important;  /* Button background */
+        border-radius: 8px !important;
+        font-family: 'Helvetica', sans-serif;
 }
-
-
-        
+      
 </style>
-
-    
+  
 """, unsafe_allow_html=True)
-
 
