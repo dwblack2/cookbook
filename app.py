@@ -208,7 +208,19 @@ st.markdown("""
         color: white !important; 
         border-radius: 8px !important; 
     }
+
+    /* Make sidebar body text match main body text */
+    section[data-testid="stSidebar"] .css-1d391kg, /* sidebar headers */
+    section[data-testid="stSidebar"] .stTextInput,  /* text input labels */
+    section[data-testid="stSidebar"] .stTextArea,   /* text areas */
+    section[data-testid="stSidebar"] p,             /* paragraphs */
+    section[data-testid="stSidebar"] li {           /* list items */
+        font-family: 'Helvetica', sans-serif;
+        color: #556277;
+        
 </style>
+
+    
 """, unsafe_allow_html=True)
 
 
