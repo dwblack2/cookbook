@@ -249,13 +249,14 @@ st.markdown("""
         font-family: 'Helvetica', sans-serif;
 }
 
-    /* Make sidebar selectbox white with correct text color */
-    section[data-testid="stSidebar"] div[role="listbox"] select,
-    section[data-testid="stSidebar"] div[role="listbox"] div {
+    /* Force sidebar selectboxes to have white background and dark text */
+    section[data-testid="stSidebar"] div[role="combobox"] > div,
+    section[data-testid="stSidebar"] div[role="combobox"] input {
         background-color: white !important;
         color: #556277 !important;
         font-family: 'Helvetica', sans-serif !important;
 }
+
 
       
 </style>
