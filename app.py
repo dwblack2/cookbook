@@ -209,14 +209,27 @@ st.markdown("""
         border-radius: 8px !important; 
     }
 
-    /* Make sidebar body text match main body text */
-    section[data-testid="stSidebar"] .css-1d391kg, /* sidebar headers */
-    section[data-testid="stSidebar"] .stTextInput,  /* text input labels */
-    section[data-testid="stSidebar"] .stTextArea,   /* text areas */
-    section[data-testid="stSidebar"] p,             /* paragraphs */
-    section[data-testid="stSidebar"] li {           /* list items */
-        font-family: 'Helvetica', sans-serif;
-        color: #556277;
+    /* Sidebar body text */
+section[data-testid="stSidebar"] {
+    color: #556277;        /* Default text color in sidebar */
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* Sidebar headers (e.g., "Add New Recipe", "Recycling Bin") */
+section[data-testid="stSidebar"] h2 {
+    color: #556277;        /* Match body text color */
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* Buttons inside the sidebar */
+section[data-testid="stSidebar"] button {
+    color: white !important;             /* Button text color */
+    background-color: #b15e6c !important;  /* Button background */
+    border-radius: 8px !important;
+    font-family: 'Helvetica', sans-serif;
+}
+
+
         
 </style>
 
