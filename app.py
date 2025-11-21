@@ -313,8 +313,8 @@ else:
             # REFRESH in-memory recipes so dropdown updates
             recipes = fetch_recipes()
         
-            # Clear selected title so dropdown resets
-            st.session_state["recipe_select"] = ""
+            # Reset dropdown safely
+            st.session_state.recipe_select = ""  # <-- use attribute access instead of dictionary style
         
             st.success(f"'{selected_title}' moved to Recycle Bin!")
             st.rerun()
