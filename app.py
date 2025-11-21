@@ -4,7 +4,7 @@ import streamlit as st
 import requests
 import base64
 
-##### 🚨 ADDED BELOW: GitHub Save Functions #####
+## Save new recipes permanently to recipes.json in github
 
 def save_recipes(recipes_list):
     """
@@ -19,7 +19,6 @@ def save_recipes(recipes_list):
 
     api_url = f"https://api.github.com/repos/{repo}/contents/{path}"
 
-    # Step 1: Get SHA of existing file
     sha_resp = requests.get(api_url)
     if sha_resp.status_code == 200:
         sha = sha_resp.json()["sha"]
@@ -27,11 +26,9 @@ def save_recipes(recipes_list):
         st.error("⚠️ Could not fetch file SHA from GitHub.")
         return False
 
-    # Step 2: Encode new JSON
     new_content = json.dumps(recipes_list, indent=2).encode("utf-8")
     encoded = base64.b64encode(new_content).decode("utf-8")
 
-    # Step 3: Prepare commit
     payload = {
         "message": "Update recipes.json from Streamlit app",
         "content": encoded,
@@ -44,7 +41,6 @@ def save_recipes(recipes_list):
         "Accept": "application/vnd.github+json"
     }
 
-    # Step 4: Push update
     res = requests.put(api_url, headers=headers, json=payload)
 
     if res.status_code in (200, 201):
@@ -66,7 +62,6 @@ def save_deleted(deleted_list):
 
     api_url = f"https://api.github.com/repos/{repo}/contents/{path}"
 
-    # Check if file already exists
     sha = None
     sha_resp = requests.get(api_url)
     if sha_resp.status_code == 200:
@@ -91,8 +86,6 @@ def save_deleted(deleted_list):
     res = requests.put(api_url, headers=headers, json=payload)
 
     return res.status_code in (200, 201)
-
-##### END ADDED CODE #####
 
 ##### Set Up #####
 
