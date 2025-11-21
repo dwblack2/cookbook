@@ -4,15 +4,6 @@ import streamlit as st
 import requests
 import base64
 
-##### Set Up #####
-
-# GitHub secrets (MOVED UP so fetch_recipes can use them)
-GITHUB_TOKEN = st.secrets["github_token"]
-GITHUB_REPO = st.secrets["github_repo"]
-GITHUB_BRANCH = st.secrets.get("github_branch", "main")
-RECIPES_FILE = st.secrets.get("recipes_file_path", "recipes.json")
-
-
 ## Save new recipes permanently to recipes.json in github
 def save_recipes(recipes_list):
     """ Save the recipes list back to GitHub using the GitHub Contents API. Overwrites recipes.json with a new commit. """
@@ -22,7 +13,6 @@ def save_recipes(recipes_list):
     path = st.secrets.get("recipes_file_path", "recipes.json")
 
     api_url = f"https://api.github.com/repos/{repo}/contents/{path}"
-
     sha_resp = requests.get(api_url)
     if sha_resp.status_code == 200:
         sha = sha_resp.json()["sha"]
@@ -61,7 +51,6 @@ def save_deleted(deleted_list):
     path = "deleted_recipes.json"
 
     api_url = f"https://api.github.com/repos/{repo}/contents/{path}"
-
     sha = None
     sha_resp = requests.get(api_url)
     if sha_resp.status_code == 200:
@@ -87,35 +76,35 @@ def save_deleted(deleted_list):
     return res.status_code in (200, 201)
 
 
-# SAFE initialization of session_state (fix for recipe selection)
-st.session_state.setdefault("recipe_select", "")
+##### Set Up #####
+# GitHub secrets
+GITHUB_TOKEN = st.secrets["github_token"]
+GITHUB_REPO = st.secrets["github_repo"]
+GITHUB_BRANCH = st.secrets.get("github_branch", "main")
+RECIPES_FILE = st.secrets.get("recipes_file_path", "recipes.json")
 
+# Load recipes from GitHub (force fresh fetch every rerun)
+import time
+timestamp = int(time.time())  # cache buster
+raw_url = (
+    f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/{RECIPES_FILE}"
+    f"?nocache={timestamp}"
+)
+try:
+    response = requests.get(raw_url, headers={"Cache-Control": "no-cache"})
+    response.raise_for_status()
+    recipes = response.json()
+except Exception as e:
+    st.error(f"Failed to load recipes from GitHub: {e}")
+    recipes = []
 
-def fetch_recipes():
-    """Fetch the latest recipes from GitHub and return as a list."""
-    import time
-    timestamp = int(time.time())  # cache buster
-    raw_url = (
-        f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/{RECIPES_FILE}"
-        f"?nocache={timestamp}"
-    )
-    try:
-        response = requests.get(raw_url, headers={"Cache-Control": "no-cache"})
-        response.raise_for_status()
-        return response.json()
-    except Exception as e:
-        st.error(f"Failed to fetch recipes from GitHub: {e}")
-        return []
-
-
-recipes = fetch_recipes()
 # Keep deleted_recipes in memory
 deleted_recipes = []
 
 st.markdown("<h1>Delaney's Cookbook!</h1>", unsafe_allow_html=True)
 
-##### App Functions #####
 
+##### App Functions #####
 # Search recipes (sidebar)
 search_term = st.sidebar.text_input("Search recipes by title, ingredient, or tag")
 
@@ -132,7 +121,9 @@ else:
 
 # Recipe dropdown (sidebar)
 recipe_titles = sorted([r.get("title", "Untitled") for r in filtered_recipes])
-selected_title = st.sidebar.selectbox("Select a recipe", [""] + recipe_titles, key="recipe_select")
+selected_title = st.sidebar.selectbox(
+    "Select a recipe", [""] + recipe_titles, key="recipe_select"
+)
 
 # Add new recipe (sidebar)
 st.sidebar.header("+ Add New Recipe")
@@ -148,13 +139,20 @@ with st.sidebar.form("add_recipe_form", clear_on_submit=True):
     submitted = st.form_submit_button("Add Recipe")
 
     if submitted and title and ingredients and instructions:
-        new_recipe = { ... }
+        new_recipe = {
+            "title": title,
+            "ready_in": ready_in,
+            "servings": servings,
+            "temperature": temp,
+            "ingredients": [i.strip() for i in ingredients.splitlines() if i.strip()],
+            "instructions": [i.strip() for i in instructions.splitlines() if i.strip()],
+            "notes": notes,
+            "tags": [t.strip() for t in tags_input.split(",") if t.strip()]
+        }
         recipes.append(new_recipe)
         save_recipes(recipes)
-        recipes = fetch_recipes()  # refresh
-        st.session_state["recipe_select"] = title  # safely update dropdown
         st.success(f"✅ '{title}' added successfully!")
-        st.rerun()  # safe rerun
+        st.rerun()
 
 
 # Recycle bin (sidebar)
@@ -260,67 +258,46 @@ else:
 
         # Delete button
         if st.button("Delete Recipe", key="delete_recipe"):
-            # Remove from main recipes list
             recipes = [r for r in recipes if r.get("title") != selected_title]
-            # Track deleted
             deleted_recipes.append(selected_recipe)
-            # Save changes to GitHub
             save_recipes(recipes)
             save_deleted(deleted_recipes)
-            # REFRESH in-memory recipes so dropdown updates
-            recipes = fetch_recipes()
-            # Reset dropdown safely
-            st.session_state.recipe_select = ""
             st.success(f"'{selected_title}' moved to Recycle Bin!")
             st.rerun()
     else:
         st.warning("Recipe not found.")
 
+
 ##### Styling #####
 st.markdown("""
 <style>
-/* App background & font defaults */
-.stApp { background-color: #e2ebf3; }
-html, body, [class*="css"] { font-family: 'Helvetica', sans-serif; color: #556277; }
-.stMarkdown, .stMarkdown p, .stMarkdown li { font-family: 'Helvetica', sans-serif; color: #556277; }
-
-/* Headings */
-.stMarkdown h1 { color: #556277; }
-.stMarkdown h2, .stMarkdown h3 { color: #B15E6C; }
-
-/* Target markdown headings */
-.stMarkdown h1 { color: #556277; }
-
-/* Main title color */
-.stMarkdown h2, h2 { color: #B15E6C !important; font-family: 'Helvetica', sans-serif !important; }
-.stMarkdown h3, h3 { color: #B15E6C !important; font-family: 'Helvetica', sans-serif !important; }
-
-/* Sidebar background */
-section[data-testid="stSidebar"] { background-color: #E2EBF3; }
-
-/* Button styling */
-button { background-color: #b15e6c !important; color: white !important; border-radius: 8px !important; }
-
-/* Sidebar body text */
-section[data-testid="stSidebar"] { color: #556277; font-family: 'Helvetica', sans-serif; }
-
-/* Sidebar headers (e.g., "Add New Recipe", "Recycling Bin") */
-section[data-testid="stSidebar"] h2 { color: #556277; font-family: 'Helvetica', sans-serif; }
-
-/* Buttons inside the sidebar */
-section[data-testid="stSidebar"] button { color: white !important; background-color: #b15e6c !important; border-radius: 8px !important; font-family: 'Helvetica', sans-serif; }
-
-/* Sidebar input boxes and textareas */
-section[data-testid="stSidebar"] input,
-section[data-testid="stSidebar"] textarea,
-section[data-testid="stSidebar"] select { background-color: white !important; color: #556277 !important; font-family: 'Helvetica', sans-serif; }
-
-/* Force sidebar selectboxes to have white background and dark text */
-section[data-testid="stSidebar"] div[role="combobox"] > div,
-section[data-testid="stSidebar"] div[role="combobox"] input { background-color: white !important; color: #556277 !important; font-family: 'Helvetica', sans-serif !important; }
-
+    /* App background & font defaults */
+    .stApp { background-color: #e2ebf3; }
+    html, body, [class*="css"] { font-family: 'Helvetica', sans-serif; color: #556277; }
+    .stMarkdown, .stMarkdown p, .stMarkdown li { font-family: 'Helvetica', sans-serif; color: #556277; }
+    /* Headings */
+    .stMarkdown h1 { color: #556277; }
+    .stMarkdown h2, .stMarkdown h3 { color: #B15E6C; }
+    /* Target markdown headings */
+    .stMarkdown h1 { color: #556277; }
+    /* Main title color */
+    .stMarkdown h2, h2 { color: #B15E6C !important; font-family: 'Helvetica', sans-serif !important; }
+    .stMarkdown h3, h3 { color: #B15E6C !important; font-family: 'Helvetica', sans-serif !important; }
+    /* Sidebar background */
+    section[data-testid="stSidebar"] { background-color: #E2EBF3; }
+    /* Button styling */
+    button { background-color: #b15e6c !important; color: white !important; border-radius: 8px !important; }
+    /* Sidebar body text */
+    section[data-testid="stSidebar"] { color: #556277; font-family: 'Helvetica', sans-serif; }
+    /* Sidebar headers */
+    section[data-testid="stSidebar"] h2 { color: #556277; font-family: 'Helvetica', sans-serif; }
+    /* Buttons inside the sidebar */
+    section[data-testid="stSidebar"] button { color: white !important; background-color: #b15e6c !important; border-radius: 8px !important; font-family: 'Helvetica', sans-serif; }
+    /* Sidebar input boxes and textareas */
+    section[data-testid="stSidebar"] input, section[data-testid="stSidebar"] textarea, section[data-testid="stSidebar"] select { background-color: white !important; color: #556277 !important; font-family: 'Helvetica', sans-serif; }
+    /* Force sidebar selectboxes to have white background and dark text */
+    section[data-testid="stSidebar"] div[role="combobox"] > div, section[data-testid="stSidebar"] div[role="combobox"] input { background-color: white !important; color: #556277 !important; font-family: 'Helvetica', sans-serif !important; }
 </style>
-
 """, unsafe_allow_html=True)
 
 print("app.py has been saved in the current folder!")
