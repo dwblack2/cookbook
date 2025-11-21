@@ -96,7 +96,7 @@ def save_deleted(deleted_list):
     return res.status_code in (200, 201)
 
 # SAFE initialization of session_state (fix for recipe selection)
-st.session_state.setdefault("recipe_select", "")
+st.session_state.recipe_select = ""
 
 
 def fetch_recipes():
@@ -297,7 +297,7 @@ else:
             recipes = fetch_recipes()
         
             # Reset dropdown safely
-            st.session_state["recipe_select"] = "" 
+            st.session_state.recipe_select = ""
 
         
             st.success(f"'{selected_title}' moved to Recycle Bin!")
