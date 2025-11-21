@@ -1,18 +1,18 @@
 [
   {
-    "title": "test 2 ",
-    "ready_in": "test 2 ",
-    "servings": "test 2 ",
-    "temperature": "test 2 ",
+    "title": "test",
+    "ready_in": "test",
+    "servings": "test",
+    "temperature": "test",
     "ingredients": [
-      "test 2"
+      "test"
     ],
     "instructions": [
-      "test 2"
+      "test"
     ],
-    "notes": "test 2 ",
+    "notes": "test",
     "tags": [
-      "test 2"
+      "test"
     ]
   }
 ]
