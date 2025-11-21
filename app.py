@@ -95,9 +95,8 @@ def save_deleted(deleted_list):
 
     return res.status_code in (200, 201)
 
-# Fetch recipes from github 
-if "recipe_select" in st.session_state:
-    st.session_state["recipe_select"] = ""
+# SAFE initialization of session_state (fix for recipe selection)
+st.session_state.setdefault("recipe_select", "")
 
 
 def fetch_recipes():
@@ -303,7 +302,6 @@ else:
         
             st.success(f"'{selected_title}' moved to Recycle Bin!")
             st.rerun()
-
 
 
     else:
