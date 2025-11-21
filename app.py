@@ -163,10 +163,16 @@ with st.sidebar.form("add_recipe_form", clear_on_submit=True):
             "notes": notes,
             "tags": [t.strip() for t in tags_input.split(",") if t.strip()]
         }
+
         recipes.append(new_recipe)
         save_recipes(recipes)
+
+        # REFRESH in-memory recipes from GitHub so it shows immediately
+        recipes = fetch_recipes()
+
         st.success(f"✅ '{title}' added successfully!")
         st.rerun()
+
 
 # Recycle bin (sidebar)
 st.sidebar.header("🗑 Recycling Bin")
@@ -283,11 +289,15 @@ else:
             save_recipes(recipes)
             save_deleted(deleted_recipes)
         
+            # REFRESH in-memory recipes so dropdown updates
+            recipes = fetch_recipes()
+        
             # Clear selected title so dropdown resets
             st.session_state["recipe_select"] = ""
         
             st.success(f"'{selected_title}' moved to Recycle Bin!")
             st.rerun()
+
 
 
     else:
