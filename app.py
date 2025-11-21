@@ -162,7 +162,7 @@ with st.sidebar.form("add_recipe_form", clear_on_submit=True):
         if title in recipe_titles:
             st.session_state["recipe_select"] = title
     
-        st.run()
+        st.rerun()
 
 
 # Recycle Bin
