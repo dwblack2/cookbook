@@ -153,9 +153,17 @@ with st.sidebar.form("add_recipe_form", clear_on_submit=True):
         }
         recipes.append(new_recipe)
         save_recipes(recipes)
-        # Set dropdown to newly added recipe instead of rerun
-        st.session_state["recipe_select"] = title
-        st.experimental_rerun()
+    
+        # REFRESH in-memory recipes from GitHub
+        recipes = fetch_recipes()
+    
+        # Update dropdown options
+        recipe_titles = sorted([r.get("title", "Untitled") for r in recipes])
+        if title in recipe_titles:
+            st.session_state["recipe_select"] = title
+    
+        st.run()
+
 
 # Recycle Bin
 st.sidebar.header("🗑 Recycling Bin")
