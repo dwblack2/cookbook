@@ -267,14 +267,90 @@ else:
 ##### Styling #####
 st.markdown("""
 <style>
-    .stApp { background-color: #e2ebf3; }
-    html, body, [class*="css"] { font-family: 'Helvetica', sans-serif; color: #556277; }
-    .stMarkdown, .stMarkdown p, .stMarkdown li { font-family: 'Helvetica', sans-serif; color: #556277; }
-    .stMarkdown h1 { color: #556277; }
-    .stMarkdown h2, .stMarkdown h3 { color: #B15E6C; }
-    section[data-testid="stSidebar"] { background-color: #E2EBF3; }
-    button { background-color: #b15e6c !important; color: white !important; border-radius: 8px !important; }
+    /* App background & font defaults */
+    .stApp { 
+        background-color: #e2ebf3; 
+    }
+    html, body, [class*="css"] { 
+        font-family: 'Helvetica', sans-serif; 
+        color: #556277; 
+    }
+    .stMarkdown, .stMarkdown p, .stMarkdown li { 
+        font-family: 'Helvetica', sans-serif; 
+        color: #556277; 
+    }
+
+    /* Headings */
+    .stMarkdown h1 { 
+        color: #556277; 
+    }
+    .stMarkdown h2, .stMarkdown h3 { 
+        color: #B15E6C; 
+    }
+
+    /* Target markdown headings */
+    .stMarkdown h1 { 
+        color: #556277;  /* Main title color */ 
+    }
+    .stMarkdown h2, h2 { 
+        color: #B15E6C !important; 
+        font-family: 'Helvetica', sans-serif !important; 
+    }
+    .stMarkdown h3, h3 { 
+        color: #B15E6C !important; 
+        font-family: 'Helvetica', sans-serif !important; 
+    }
+
+    /* Sidebar background */
+    section[data-testid="stSidebar"] { 
+        background-color: #E2EBF3; 
+    }
+
+    /* Button styling */
+    button { 
+        background-color: #b15e6c !important; 
+        color: white !important; 
+        border-radius: 8px !important; 
+    }
+
+    /* Sidebar body text */
+    section[data-testid="stSidebar"] { 
+        color: #556277;        /* Default text color in sidebar */
+        font-family: 'Helvetica', sans-serif; 
+    }
+
+    /* Sidebar headers (e.g., "Add New Recipe", "Recycling Bin") */
+    section[data-testid="stSidebar"] h2 { 
+        color: #556277;        /* Match body text color */
+        font-family: 'Helvetica', sans-serif; 
+    }
+
+    /* Buttons inside the sidebar */
+    section[data-testid="stSidebar"] button { 
+        color: white !important;             /* Button text color */
+        background-color: #b15e6c !important;  /* Button background */
+        border-radius: 8px !important;
+        font-family: 'Helvetica', sans-serif;
+    }
+
+    /* Sidebar input boxes and textareas */
+    section[data-testid="stSidebar"] input,
+    section[data-testid="stSidebar"] textarea,
+    section[data-testid="stSidebar"] select { 
+        background-color: white !important;  /* Force white background */
+        color: #556277 !important;           /* Match body text color */
+        font-family: 'Helvetica', sans-serif; 
+    }
+
+    /* Force sidebar selectboxes to have white background and dark text */
+    section[data-testid="stSidebar"] div[role="combobox"] > div,
+    section[data-testid="stSidebar"] div[role="combobox"] input { 
+        background-color: white !important;
+        color: #556277 !important;
+        font-family: 'Helvetica', sans-serif !important; 
+    }
 </style>
 """, unsafe_allow_html=True)
+
 
 print("app.py has been saved in the current folder!")
