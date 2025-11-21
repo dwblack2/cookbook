@@ -95,11 +95,18 @@ GITHUB_REPO = st.secrets["github_repo"]
 GITHUB_BRANCH = st.secrets.get("github_branch", "main")
 RECIPES_FILE = st.secrets.get("recipes_file_path", "recipes.json")
 
-# Load recipes from GitHub
-raw_url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/{RECIPES_FILE}"
+# Load recipes from GitHub (force fresh fetch every rerun)
+import time
+
+timestamp = int(time.time())  # cache buster
+
+raw_url = (
+    f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/{RECIPES_FILE}"
+    f"?nocache={timestamp}"
+)
 
 try:
-    response = requests.get(raw_url)
+    response = requests.get(raw_url, headers={"Cache-Control": "no-cache"})
     response.raise_for_status()
     recipes = response.json()
 except Exception as e:
@@ -110,6 +117,7 @@ except Exception as e:
 deleted_recipes = []
 
 st.markdown("<h1>Delaney's Cookbook!</h1>", unsafe_allow_html=True)
+
 
 ##### App Functions #####
 
@@ -265,12 +273,22 @@ else:
 
         # Delete button
         if st.button("Delete Recipe", key="delete_recipe"):
+            # Remove from main recipes list
             recipes = [r for r in recipes if r.get("title") != selected_title]
+        
+            # ALSO remove from filtered list so it disappears immediately
+            filtered_recipes = [r for r in filtered_recipes if r.get("title") != selected_title]
+        
+            # Track deleted
             deleted_recipes.append(selected_recipe)
+        
+            # Save changes
             save_recipes(recipes)
             save_deleted(deleted_recipes)
+        
             st.success(f"'{selected_title}' moved to Recycle Bin!")
             st.rerun()
+
     else:
         st.warning("Recipe not found.")
 
