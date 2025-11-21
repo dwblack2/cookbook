@@ -2848,22 +2848,6 @@
     ]
   },
   {
-    "title": "test",
-    "ready_in": "test",
-    "servings": "test",
-    "temperature": "test",
-    "ingredients": [
-      "test"
-    ],
-    "instructions": [
-      "test"
-    ],
-    "notes": "test",
-    "tags": [
-      "test"
-    ]
-  },
-  {
     "title": "test 2 ",
     "ready_in": "test 2 ",
     "servings": "test 2 ",
@@ -2877,38 +2861,6 @@
     "notes": "test 2 ",
     "tags": [
       "test 2"
-    ]
-  },
-  {
-    "title": "test",
-    "ready_in": "test",
-    "servings": "test",
-    "temperature": "test",
-    "ingredients": [
-      "test"
-    ],
-    "instructions": [
-      "test"
-    ],
-    "notes": "test",
-    "tags": [
-      "test"
-    ]
-  },
-  {
-    "title": "git push origin main",
-    "ready_in": "git push origin main",
-    "servings": "git push origin main",
-    "temperature": "git push origin main",
-    "ingredients": [
-      "git push origin main"
-    ],
-    "instructions": [
-      "git push origin main"
-    ],
-    "notes": "git push origin main\n",
-    "tags": [
-      "git push origin main"
     ]
   }
 ]
