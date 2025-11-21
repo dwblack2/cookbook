@@ -2880,19 +2880,19 @@
     ]
   },
   {
-    "title": "git push origin main",
-    "ready_in": "git push origin main",
-    "servings": "git push origin main",
-    "temperature": "git push origin main",
+    "title": "test",
+    "ready_in": "test",
+    "servings": "test",
+    "temperature": "test",
     "ingredients": [
-      "git push origin main"
+      "test"
     ],
     "instructions": [
-      "git push origin main"
+      "test"
     ],
-    "notes": "git push origin main\n",
+    "notes": "test",
     "tags": [
-      "git push origin main"
+      "test"
     ]
   }
 ]
