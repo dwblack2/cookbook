@@ -148,22 +148,14 @@ with st.sidebar.form("add_recipe_form", clear_on_submit=True):
     submitted = st.form_submit_button("Add Recipe")
 
     if submitted and title and ingredients and instructions:
-        new_recipe = {
-            "title": title,
-            "ready_in": ready_in,
-            "servings": servings,
-            "temperature": temp,
-            "ingredients": [i.strip() for i in ingredients.splitlines() if i.strip()],
-            "instructions": [i.strip() for i in instructions.splitlines() if i.strip()],
-            "notes": notes,
-            "tags": [t.strip() for t in tags_input.split(",") if t.strip()]
-        }
+        new_recipe = { ... }
         recipes.append(new_recipe)
         save_recipes(recipes)
-        # REFRESH in-memory recipes from GitHub so it shows immediately
-        recipes = fetch_recipes()
+        recipes = fetch_recipes()  # refresh
+        st.session_state["recipe_select"] = title  # safely update dropdown
         st.success(f"✅ '{title}' added successfully!")
-        st.rerun()
+        st.rerun()  # safe rerun
+
 
 # Recycle bin (sidebar)
 st.sidebar.header("🗑 Recycling Bin")
