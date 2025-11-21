@@ -88,6 +88,9 @@ def save_deleted(deleted_list):
     return res.status_code in (200, 201)
 
 # Fetch recipes from github 
+if "recipe_select" not in st.session_state:
+    st.session_state["recipe_select"] = ""
+
 def fetch_recipes():
     """Fetch the latest recipes from GitHub and return as a list."""
     import time
