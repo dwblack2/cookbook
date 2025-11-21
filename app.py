@@ -297,7 +297,8 @@ else:
             recipes = fetch_recipes()
         
             # Reset dropdown safely
-            st.session_state.recipe_select = ""
+            st.session_state["recipe_select"] = ""
+            st.rerun()
 
         
             st.success(f"'{selected_title}' moved to Recycle Bin!")
