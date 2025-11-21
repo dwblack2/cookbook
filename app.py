@@ -110,18 +110,6 @@ def fetch_recipes():
 
 recipes = fetch_recipes()
 
-# Update filtered list so dropdown updates
-if search_term:
-    filtered_recipes = [
-        r for r in recipes
-        if search_term.lower() in r.get("title", "").lower()
-        or any(search_term.lower() in ing.lower() for ing in r.get("ingredients", []))
-        or any(search_term.lower() in tag.lower() for tag in r.get("tags", []))
-    ]
-else:
-    filtered_recipes = recipes
-
-
 ##### Set Up #####
 
 # GitHub secrets
@@ -153,7 +141,17 @@ deleted_recipes = []
 
 st.markdown("<h1>Delaney's Cookbook!</h1>", unsafe_allow_html=True)
 
-
+# Update filtered list so dropdown updates
+if search_term:
+    filtered_recipes = [
+        r for r in recipes
+        if search_term.lower() in r.get("title", "").lower()
+        or any(search_term.lower() in ing.lower() for ing in r.get("ingredients", []))
+        or any(search_term.lower() in tag.lower() for tag in r.get("tags", []))
+    ]
+else:
+    filtered_recipes = recipes
+    
 ##### App Functions #####
 
 # Search recipes (sidebar) 
