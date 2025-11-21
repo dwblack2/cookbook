@@ -87,6 +87,24 @@ def save_deleted(deleted_list):
 
     return res.status_code in (200, 201)
 
+# Fetch recipes from github 
+def fetch_recipes():
+    """Fetch the latest recipes from GitHub and return as a list."""
+    import time
+
+    timestamp = int(time.time())  # cache buster
+    raw_url = (
+        f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/{RECIPES_FILE}"
+        f"?nocache={timestamp}"
+    )
+    try:
+        response = requests.get(raw_url, headers={"Cache-Control": "no-cache"})
+        response.raise_for_status()
+        return response.json()
+    except Exception as e:
+        st.error(f"Failed to fetch recipes from GitHub: {e}")
+        return []
+
 ##### Set Up #####
 
 # GitHub secrets
