@@ -276,18 +276,19 @@ else:
             # Remove from main recipes list
             recipes = [r for r in recipes if r.get("title") != selected_title]
         
-            # ALSO remove from filtered list so it disappears immediately
-            filtered_recipes = [r for r in filtered_recipes if r.get("title") != selected_title]
-        
             # Track deleted
             deleted_recipes.append(selected_recipe)
         
-            # Save changes
+            # Save changes to GitHub
             save_recipes(recipes)
             save_deleted(deleted_recipes)
         
+            # Clear selected title so dropdown resets
+            st.session_state["recipe_select"] = ""
+        
             st.success(f"'{selected_title}' moved to Recycle Bin!")
-            st.rerun()
+            st.run()
+
 
     else:
         st.warning("Recipe not found.")
