@@ -12,8 +12,10 @@ GITHUB_REPO = st.secrets["github_repo"]
 GITHUB_BRANCH = st.secrets.get("github_branch", "main")
 RECIPES_FILE = st.secrets.get("recipes_file_path", "recipes.json")
 
+
 ## Save new recipes permanently to recipes.json in github
 def save_recipes(recipes_list):
+    """ Save the recipes list back to GitHub using the GitHub Contents API. Overwrites recipes.json with a new commit. """
     token = st.secrets["github_token"]
     repo = st.secrets["github_repo"]
     branch = st.secrets.get("github_branch", "main")
@@ -44,7 +46,6 @@ def save_recipes(recipes_list):
     }
 
     res = requests.put(api_url, headers=headers, json=payload)
-
     if res.status_code in (200, 201):
         return True
     else:
@@ -53,6 +54,7 @@ def save_recipes(recipes_list):
 
 
 def save_deleted(deleted_list):
+    """ Optional: save deleted recipes to deleted_recipes.json in GitHub. Creates file if missing. """
     token = st.secrets["github_token"]
     repo = st.secrets["github_repo"]
     branch = st.secrets.get("github_branch", "main")
@@ -85,11 +87,12 @@ def save_deleted(deleted_list):
     return res.status_code in (200, 201)
 
 
-# SAFE initialization of session_state
-if "recipe_select" not in st.session_state:
-    st.session_state["recipe_select"] = ""
+# SAFE initialization of session_state (fix for recipe selection)
+st.session_state.setdefault("recipe_select", "")
+
 
 def fetch_recipes():
+    """Fetch the latest recipes from GitHub and return as a list."""
     import time
     timestamp = int(time.time())  # cache buster
     raw_url = (
@@ -104,14 +107,19 @@ def fetch_recipes():
         st.error(f"Failed to fetch recipes from GitHub: {e}")
         return []
 
+
 recipes = fetch_recipes()
+# Keep deleted_recipes in memory
 deleted_recipes = []
 
 st.markdown("<h1>Delaney's Cookbook!</h1>", unsafe_allow_html=True)
 
 ##### App Functions #####
 
+# Search recipes (sidebar)
 search_term = st.sidebar.text_input("Search recipes by title, ingredient, or tag")
+
+# Filter recipes based on search (sidebar)
 if search_term:
     filtered_recipes = [
         r for r in recipes
@@ -122,12 +130,11 @@ if search_term:
 else:
     filtered_recipes = recipes
 
+# Recipe dropdown (sidebar)
 recipe_titles = sorted([r.get("title", "Untitled") for r in filtered_recipes])
-selected_title = st.sidebar.selectbox(
-    "Select a recipe", [""] + recipe_titles, key="recipe_select"
-)
+selected_title = st.sidebar.selectbox("Select a recipe", [""] + recipe_titles, key="recipe_select")
 
-# Add new recipe
+# Add new recipe (sidebar)
 st.sidebar.header("+ Add New Recipe")
 with st.sidebar.form("add_recipe_form", clear_on_submit=True):
     title = st.text_input("Recipe Title")
@@ -153,19 +160,12 @@ with st.sidebar.form("add_recipe_form", clear_on_submit=True):
         }
         recipes.append(new_recipe)
         save_recipes(recipes)
-    
-        # REFRESH in-memory recipes from GitHub
+        # REFRESH in-memory recipes from GitHub so it shows immediately
         recipes = fetch_recipes()
-    
-        # Update dropdown options
-        recipe_titles = sorted([r.get("title", "Untitled") for r in recipes])
-        if title in recipe_titles:
-            st.session_state["recipe_select"] = title
-    
+        st.success(f"✅ '{title}' added successfully!")
         st.rerun()
 
-
-# Recycle Bin
+# Recycle bin (sidebar)
 st.sidebar.header("🗑 Recycling Bin")
 if deleted_recipes:
     deleted_titles = [r.get("title", "Untitled") for r in deleted_recipes]
@@ -179,12 +179,12 @@ if deleted_recipes:
             save_recipes(recipes)
             save_deleted(deleted_recipes)
             st.success(f"'{selected_deleted}' restored!")
-            st.experimental_rerun()
+            st.rerun()
     if col2.button("Permanent Delete"):
         deleted_recipes = [r for r in deleted_recipes if r.get("title") != selected_deleted]
         save_deleted(deleted_recipes)
         st.success(f"'{selected_deleted}' permanently deleted!")
-        st.experimental_rerun()
+        st.rerun()
 else:
     st.sidebar.info("Recycle Bin is empty.")
 
@@ -194,15 +194,16 @@ if selected_title == "":
     ## Welcome
     Here you can:
     - Select an existing recipe
-    - Search by title, ingredient, or tag  
-    - Add new recipes 
-    - Delete recipes and restore them later  
+    - Search by title, ingredient, or tag
+    - Add new recipes
+    - Delete recipes and restore them later
     """)
 else:
     selected_recipe = next((r for r in filtered_recipes if r.get("title") == selected_title), None)
     if selected_recipe:
         st.header(selected_recipe.get("title", "Untitled"))
 
+        # Display recipe details
         col1, col2, col3 = st.columns(3)
         with col1:
             st.write(f"**Ready In:** {selected_recipe.get('ready_in', 'N/A')}")
@@ -211,6 +212,7 @@ else:
         with col3:
             st.write(f"**Temperature:** {selected_recipe.get('temperature', 'N/A')}")
 
+        # Ingredients
         st.subheader("Ingredients")
         ingredients = selected_recipe.get("ingredients", [])
         if ingredients:
@@ -219,6 +221,7 @@ else:
         else:
             st.markdown("_No ingredients listed._")
 
+        # Instructions
         st.subheader("Preparation Steps")
         instructions = selected_recipe.get("instructions", [])
         if instructions:
@@ -227,6 +230,7 @@ else:
         else:
             st.markdown("_No instructions provided._")
 
+        # Notes
         st.subheader("Notes")
         notes = selected_recipe.get("notes", "")
         if notes:
@@ -238,11 +242,13 @@ else:
         else:
             st.markdown("_No notes provided._")
 
+        # Tags
         tags = selected_recipe.get("tags", [])
         if tags:
             st.subheader("Tags")
             st.markdown(", ".join(tags))
 
+        # Ratings
         st.subheader("Rate this recipe")
         rating = st.slider("Your rating", 1, 5, 3, key=f"rating_{selected_title}")
         if st.button("Submit rating", key=f"submit_rating_{selected_title}"):
@@ -251,7 +257,7 @@ else:
             selected_recipe["ratings"].append(rating)
             save_recipes(recipes)
             st.success(f"Thanks! You rated {selected_title} {rating} ⭐")
-            st.experimental_rerun()
+            st.rerun()
 
         if "ratings" in selected_recipe and selected_recipe["ratings"]:
             avg_rating = sum(selected_recipe["ratings"]) / len(selected_recipe["ratings"])
@@ -262,103 +268,67 @@ else:
 
         # Delete button
         if st.button("Delete Recipe", key="delete_recipe"):
+            # Remove from main recipes list
             recipes = [r for r in recipes if r.get("title") != selected_title]
+            # Track deleted
             deleted_recipes.append(selected_recipe)
+            # Save changes to GitHub
             save_recipes(recipes)
             save_deleted(deleted_recipes)
-            # Reset dropdown
-            st.session_state["recipe_select"] = ""
+            # REFRESH in-memory recipes so dropdown updates
+            recipes = fetch_recipes()
+            # Reset dropdown safely
+            st.session_state.recipe_select = ""
             st.success(f"'{selected_title}' moved to Recycle Bin!")
-            st.experimental_rerun()
-
+            st.rerun()
+    else:
+        st.warning("Recipe not found.")
 
 ##### Styling #####
 st.markdown("""
 <style>
-    /* App background & font defaults */
-    .stApp { 
-        background-color: #e2ebf3; 
-    }
-    html, body, [class*="css"] { 
-        font-family: 'Helvetica', sans-serif; 
-        color: #556277; 
-    }
-    .stMarkdown, .stMarkdown p, .stMarkdown li { 
-        font-family: 'Helvetica', sans-serif; 
-        color: #556277; 
-    }
+/* App background & font defaults */
+.stApp { background-color: #e2ebf3; }
+html, body, [class*="css"] { font-family: 'Helvetica', sans-serif; color: #556277; }
+.stMarkdown, .stMarkdown p, .stMarkdown li { font-family: 'Helvetica', sans-serif; color: #556277; }
 
-    /* Headings */
-    .stMarkdown h1 { 
-        color: #556277; 
-    }
-    .stMarkdown h2, .stMarkdown h3 { 
-        color: #B15E6C; 
-    }
+/* Headings */
+.stMarkdown h1 { color: #556277; }
+.stMarkdown h2, .stMarkdown h3 { color: #B15E6C; }
 
-    /* Target markdown headings */
-    .stMarkdown h1 { 
-        color: #556277;  /* Main title color */ 
-    }
-    .stMarkdown h2, h2 { 
-        color: #B15E6C !important; 
-        font-family: 'Helvetica', sans-serif !important; 
-    }
-    .stMarkdown h3, h3 { 
-        color: #B15E6C !important; 
-        font-family: 'Helvetica', sans-serif !important; 
-    }
+/* Target markdown headings */
+.stMarkdown h1 { color: #556277; }
 
-    /* Sidebar background */
-    section[data-testid="stSidebar"] { 
-        background-color: #E2EBF3; 
-    }
+/* Main title color */
+.stMarkdown h2, h2 { color: #B15E6C !important; font-family: 'Helvetica', sans-serif !important; }
+.stMarkdown h3, h3 { color: #B15E6C !important; font-family: 'Helvetica', sans-serif !important; }
 
-    /* Button styling */
-    button { 
-        background-color: #b15e6c !important; 
-        color: white !important; 
-        border-radius: 8px !important; 
-    }
+/* Sidebar background */
+section[data-testid="stSidebar"] { background-color: #E2EBF3; }
 
-    /* Sidebar body text */
-    section[data-testid="stSidebar"] { 
-        color: #556277;        /* Default text color in sidebar */
-        font-family: 'Helvetica', sans-serif; 
-    }
+/* Button styling */
+button { background-color: #b15e6c !important; color: white !important; border-radius: 8px !important; }
 
-    /* Sidebar headers (e.g., "Add New Recipe", "Recycling Bin") */
-    section[data-testid="stSidebar"] h2 { 
-        color: #556277;        /* Match body text color */
-        font-family: 'Helvetica', sans-serif; 
-    }
+/* Sidebar body text */
+section[data-testid="stSidebar"] { color: #556277; font-family: 'Helvetica', sans-serif; }
 
-    /* Buttons inside the sidebar */
-    section[data-testid="stSidebar"] button { 
-        color: white !important;             /* Button text color */
-        background-color: #b15e6c !important;  /* Button background */
-        border-radius: 8px !important;
-        font-family: 'Helvetica', sans-serif;
-    }
+/* Sidebar headers (e.g., "Add New Recipe", "Recycling Bin") */
+section[data-testid="stSidebar"] h2 { color: #556277; font-family: 'Helvetica', sans-serif; }
 
-    /* Sidebar input boxes and textareas */
-    section[data-testid="stSidebar"] input,
-    section[data-testid="stSidebar"] textarea,
-    section[data-testid="stSidebar"] select { 
-        background-color: white !important;  /* Force white background */
-        color: #556277 !important;           /* Match body text color */
-        font-family: 'Helvetica', sans-serif; 
-    }
+/* Buttons inside the sidebar */
+section[data-testid="stSidebar"] button { color: white !important; background-color: #b15e6c !important; border-radius: 8px !important; font-family: 'Helvetica', sans-serif; }
 
-    /* Force sidebar selectboxes to have white background and dark text */
-    section[data-testid="stSidebar"] div[role="combobox"] > div,
-    section[data-testid="stSidebar"] div[role="combobox"] input { 
-        background-color: white !important;
-        color: #556277 !important;
-        font-family: 'Helvetica', sans-serif !important; 
-    }
+/* Sidebar input boxes and textareas */
+section[data-testid="stSidebar"] input,
+section[data-testid="stSidebar"] textarea,
+section[data-testid="stSidebar"] select { background-color: white !important; color: #556277 !important; font-family: 'Helvetica', sans-serif; }
+
+/* Force sidebar selectboxes to have white background and dark text */
+section[data-testid="stSidebar"] div[role="combobox"] > div,
+section[data-testid="stSidebar"] div[role="combobox"] input { background-color: white !important; color: #556277 !important; font-family: 'Helvetica', sans-serif !important; }
+
 </style>
-""", unsafe_allow_html=True)
 
+""", unsafe_allow_html=True)
 
 print("app.py has been saved in the current folder!")
