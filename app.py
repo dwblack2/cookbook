@@ -287,7 +287,7 @@ else:
             st.session_state["recipe_select"] = ""
         
             st.success(f"'{selected_title}' moved to Recycle Bin!")
-            st.run()
+            st.rerun()
 
 
     else:
