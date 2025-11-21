@@ -2848,19 +2848,19 @@
     ]
   },
   {
-    "title": "test recipe",
-    "ready_in": "1",
-    "servings": "1",
-    "temperature": "1",
+    "title": "test recipe 2",
+    "ready_in": "test",
+    "servings": "test",
+    "temperature": "test",
     "ingredients": [
-      "1"
+      "test"
     ],
     "instructions": [
-      "1"
+      "test"
     ],
-    "notes": "1",
+    "notes": "test",
     "tags": [
-      "1"
+      "test"
     ]
   }
 ]
