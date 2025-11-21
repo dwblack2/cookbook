@@ -2848,35 +2848,19 @@
     ]
   },
   {
-    "title": "test",
-    "ready_in": "test",
-    "servings": "test",
-    "temperature": "test",
+    "title": "test 2 ",
+    "ready_in": "test 2 ",
+    "servings": "test 2 ",
+    "temperature": "test 2 ",
     "ingredients": [
-      "test"
+      "test 2"
     ],
     "instructions": [
-      "test"
+      "test 2"
     ],
-    "notes": "test",
+    "notes": "test 2 ",
     "tags": [
-      "test"
-    ]
-  },
-  {
-    "title": "test",
-    "ready_in": "test",
-    "servings": "test",
-    "temperature": "test",
-    "ingredients": [
-      "test"
-    ],
-    "instructions": [
-      "test"
-    ],
-    "notes": "test",
-    "tags": [
-      "test"
+      "test 2"
     ]
   }
 ]
