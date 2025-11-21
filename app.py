@@ -4,6 +4,14 @@ import streamlit as st
 import requests
 import base64
 
+##### Set Up #####
+
+# GitHub secrets (MOVED UP so fetch_recipes can use them)
+GITHUB_TOKEN = st.secrets["github_token"]
+GITHUB_REPO = st.secrets["github_repo"]
+GITHUB_BRANCH = st.secrets.get("github_branch", "main")
+RECIPES_FILE = st.secrets.get("recipes_file_path", "recipes.json")
+
 ## Save new recipes permanently to recipes.json in github
 
 def save_recipes(recipes_list):
@@ -106,52 +114,15 @@ def fetch_recipes():
         return response.json()
     except Exception as e:
         st.error(f"Failed to fetch recipes from GitHub: {e}")
-        return 
+        return []
 
 recipes = fetch_recipes()
-
-##### Set Up #####
-
-# GitHub secrets
-GITHUB_TOKEN = st.secrets["github_token"]
-GITHUB_REPO = st.secrets["github_repo"]
-GITHUB_BRANCH = st.secrets.get("github_branch", "main")
-RECIPES_FILE = st.secrets.get("recipes_file_path", "recipes.json")
-
-# Load recipes from GitHub (force fresh fetch every rerun)
-import time
-
-timestamp = int(time.time())  # cache buster
-
-raw_url = (
-    f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/{RECIPES_FILE}"
-    f"?nocache={timestamp}"
-)
-
-try:
-    response = requests.get(raw_url, headers={"Cache-Control": "no-cache"})
-    response.raise_for_status()
-    recipes = response.json()
-except Exception as e:
-    st.error(f"Failed to load recipes from GitHub: {e}")
-    recipes = []
 
 # Keep deleted_recipes in memory
 deleted_recipes = []
 
 st.markdown("<h1>Delaney's Cookbook!</h1>", unsafe_allow_html=True)
 
-# Update filtered list so dropdown updates
-if search_term:
-    filtered_recipes = [
-        r for r in recipes
-        if search_term.lower() in r.get("title", "").lower()
-        or any(search_term.lower() in ing.lower() for ing in r.get("ingredients", []))
-        or any(search_term.lower() in tag.lower() for tag in r.get("tags", []))
-    ]
-else:
-    filtered_recipes = recipes
-    
 ##### App Functions #####
 
 # Search recipes (sidebar) 
@@ -326,7 +297,7 @@ else:
             recipes = fetch_recipes()
         
             # Reset dropdown safely
-            st.session_state.recipe_select = ""  # <-- use attribute access instead of dictionary style
+            st.session_state.recipe_select = ""  # <-- fixed
         
             st.success(f"'{selected_title}' moved to Recycle Bin!")
             st.rerun()
