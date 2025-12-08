@@ -83,23 +83,48 @@ GITHUB_REPO = st.secrets["github_repo"]
 GITHUB_BRANCH = st.secrets.get("github_branch", "main")
 RECIPES_FILE = st.secrets.get("recipes_file_path", "recipes.json")
 
-# Load recipes from GitHub (force fresh fetch every rerun)
-import time
-timestamp = int(time.time())  # cache buster
-raw_url = (
-    f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/{RECIPES_FILE}"
-    f"?nocache={timestamp}"
-)
-try:
-    response = requests.get(raw_url, headers={"Cache-Control": "no-cache"})
-    response.raise_for_status()
-    recipes = response.json()
-except Exception as e:
-    st.error(f"Failed to load recipes from GitHub: {e}")
-    recipes = []
+# Load recipes from GitHub using the API (authenticated)
+def load_recipes():
+    token = st.secrets["github_token"]
+    repo = st.secrets["github_repo"]
+    branch = st.secrets.get("github_branch", "main")
+    path = st.secrets.get("recipes_file_path", "recipes.json")
 
-# Keep deleted_recipes in memory
-deleted_recipes = []
+    api_url = f"https://api.github.com/repos/{repo}/contents/{path}?ref={branch}"
+    headers = {"Authorization": f"Bearer {token}"}
+
+    resp = requests.get(api_url, headers=headers)
+    if resp.status_code == 200:
+        import base64
+        content = resp.json()["content"]
+        recipes = json.loads(base64.b64decode(content).decode("utf-8"))
+        return recipes
+    else:
+        st.error(f"Failed to load recipes from GitHub: {resp.text}")
+        return []
+
+recipes = load_recipes()
+
+# Load any JSON file from GitHub using the API
+def load_github_json(file_path):
+    token = st.secrets["github_token"]
+    repo = st.secrets["github_repo"]
+    branch = st.secrets.get("github_branch", "main")
+
+    api_url = f"https://api.github.com/repos/{repo}/contents/{file_path}?ref={branch}"
+    headers = {"Authorization": f"Bearer {token}"}
+
+    resp = requests.get(api_url, headers=headers)
+    if resp.status_code == 200:
+        import base64
+        content = resp.json()["content"]
+        return json.loads(base64.b64decode(content).decode("utf-8"))
+    else:
+        # If file does not exist, return empty list
+        return []
+
+# Keep deleted_recipes in memory (load from GitHub if exists)
+deleted_recipes = load_github_json("deleted_recipes.json")
 
 st.markdown("<h1>Delaney's Cookbook!</h1>", unsafe_allow_html=True)
 
