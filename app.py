@@ -87,7 +87,7 @@ RECIPES_FILE = st.secrets.get("recipes_file_path", "recipes.json")
 import time
 timestamp = int(time.time())  # cache buster
 raw_url = (
-    f"https://github.com/dwblack2/cookbook/main/recipes.json"
+    f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/{RECIPES_FILE}"
     f"?nocache={timestamp}"
 )
 try:
