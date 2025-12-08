@@ -3056,5 +3056,31 @@
       "Dinner",
       "Stove"
     ]
+  },
+  {
+    "title": "Chicken Marinade",
+    "ready_in": "10 minutes",
+    "servings": "\u2154 cup (enough for 2 pounds of chicken)",
+    "temperature": "n/a",
+    "ingredients": [
+      "\u00bc c extra-virgin olive oil",
+      "1 large lemon, zested and juiced",
+      "1 tbsp honey or light brown sugar",
+      "1 tbsp Dijon mustard",
+      "1 tbsp soy sauce",
+      "1 large garlic clove, minced or grated",
+      "1 tsp dried oregano, rosemary or thyme, or 2 teaspoons chopped fresh",
+      "1 tsp kosher salt (such as Diamond Crystal)",
+      "\u00bd tsp black pepper",
+      "2 pounds chicken pieces, bone-in or boneless, skin-on or skinless"
+    ],
+    "instructions": [
+      "Combine oil, lemon zest, lemon juice, honey, Dijon, soy sauce, garlic, oregano, salt and pepper in a medium bowl and whisk until smooth. Add chicken to the bowl, cover and refrigerate for at least 2 hours and up to 8 hours. Bring the chicken in the marinade to room temperature for 30 minutes before cooking. Remove the chicken and brush off any excess marinade before cooking."
+    ],
+    "notes": "Source: NYT Cooking",
+    "tags": [
+      "Chicken",
+      "Marinade"
+    ]
   }
 ]
