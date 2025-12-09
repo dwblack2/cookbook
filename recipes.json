@@ -3119,5 +3119,30 @@
       "Oven",
       "Sheetpan"
     ]
+  },
+  {
+    "title": "Pasta With Pumpkin Seed Pesto",
+    "ready_in": "25 minutes",
+    "servings": "4-6 servings",
+    "temperature": "n/a",
+    "ingredients": [
+      "Salt and pepper",
+      "Short, curly pasta",
+      "\u2153 c pumpkin seeds (pepitas), plus more for sprinkling",
+      "Pesto",
+      "1\u00bd cups grape or cherry tomatoes, halved (optional)"
+    ],
+    "instructions": [
+      "Boil pasta according to instructions",
+      "Blend pesto with pepitas",
+      "Combine with cherry tomatoes and pasta"
+    ],
+    "notes": "Source: NYT Cooking",
+    "tags": [
+      "Pasta",
+      "Lunch",
+      "Dinner",
+      "Stove"
+    ]
   }
 ]
