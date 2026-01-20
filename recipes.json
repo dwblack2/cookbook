@@ -3144,5 +3144,35 @@
       "Dinner",
       "Stove"
     ]
+  },
+  {
+    "title": "Chocolate Chip Cookie Dough",
+    "ready_in": "45 minutes",
+    "servings": "24 cookies",
+    "temperature": "350\u00b0F",
+    "ingredients": [
+      "2 c minus 2 tablespoons cake flour (8\u00bd ounces)",
+      "1\u2154 c bread flour (8\u00bd ounces)",
+      "1\u00bc tsp baking soda",
+      "1\u00bd tsp baking powder",
+      "1\u00bd tsp coarse sea salt, plus more for sprinkling",
+      "1\u00bc c unsalted butter (2\u00bd sticks)",
+      "1\u00bc c light brown sugar (10 ounces)",
+      "1 c plus 2 tablespoons granulated sugar (8 ounces)",
+      "2 large eggs",
+      "2 tsp natural vanilla extract",
+      "1\u00bc lb bittersweet chocolate disks or f\u00e8ves, at least 60 percent cacao content"
+    ],
+    "instructions": [
+      "Sift flours, baking soda, baking powder and salt into a bowl. Set aside.",
+      "Using a mixer fitted with paddle attachment, cream butter and sugars together until very light, about 5 minutes. Add eggs, one at a time, mixing well after each addition. Stir in the vanilla. Reduce speed to low, add dry ingredients and mix until just combined, 5 to 10 seconds. Drop chocolate pieces in and incorporate them without breaking them. Press plastic wrap against dough and refrigerate for 24 to 36 hours. Dough may be used in batches, and can be refrigerated for up to 72 hours.",
+      "When ready to bake, preheat oven to 350 degrees. Line a baking sheet with parchment paper or a nonstick baking mat. Set aside.",
+      "Scoop 6 3\u00bd-ounce mounds of dough (the size of generous golf balls) onto baking sheet, making sure to turn horizontally any chocolate pieces that are poking up; it will make for a more attractive cookie. Sprinkle lightly with salt and bake until golden brown but still soft, 18 to 20 minutes. Transfer sheet to a wire rack for 10 minutes, then slip cookies onto another rack to cool a bit more. Repeat with remaining dough, or reserve dough, refrigerated, for baking remaining batches the next day. Eat warm, with a big napkin."
+    ],
+    "notes": "Source: NYT Cooking",
+    "tags": [
+      "Dessert",
+      "Cookies"
+    ]
   }
 ]
