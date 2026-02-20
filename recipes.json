@@ -3688,5 +3688,30 @@
       "Stove",
       "Dinner"
     ]
+  },
+  {
+    "title": "Herby Chicken Traybake",
+    "ready_in": "1 hour",
+    "servings": "2",
+    "temperature": "350\u00b0F",
+    "ingredients": [
+      "14 oz potatoes",
+      "2 chicken legs/ thighs",
+      "6 cloves garlic unpeeled",
+      "2 sprigs of fresh rosemary",
+      "1 lemon"
+    ],
+    "instructions": [
+      "Preheat the oven to 350\u00b0F. Scrub the potatoes, slice 1/4 inch thick, and place in a 12x10 inch pan with the chicken, 1.2 tablespoon olive oil, and a pinch of salt and pepper. Lightly squash and add the unpeeled garlic cloves, toss well, then arrange the potatoes in a fairly even layer.",
+      "Set the chicken legs in top of the potatoes, skin side up. Bake for 40 minutes.",
+      "When time's up, top with rosemary, use a vegetable peeler to peel the lemon over the pan, then toss in 1 tablespoon of olive oil. Squeeze half the lemon over the pan, then return to the oven for the last 10 minutes or until the chicken is tender and golden."
+    ],
+    "notes": "Source: Jamie Oliver Cookbook",
+    "tags": [
+      "Chicken",
+      "Main",
+      "Baked",
+      "Oven"
+    ]
   }
 ]
