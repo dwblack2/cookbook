@@ -3713,5 +3713,31 @@
       "Baked",
       "Oven"
     ]
+  },
+  {
+    "title": "One-Pan Fish and Rice",
+    "ready_in": "15 minutes",
+    "servings": "4",
+    "temperature": "",
+    "ingredients": [
+      "1 1/2 cups basmati rice",
+      "6 heaping teaspoons green olive tapenade",
+      "12 oz ripe mixed-color cherry tomatoes",
+      "1/2 bunch of fresh basil",
+      "1 lb white fish fillets, such as haddock, skin-off",
+      "Olive oil",
+      "Red wine vinegar"
+    ],
+    "instructions": [
+      "In the Dutch oven on high heat, mix the rice with 2 heaping teaspoons of tapenade, then pour over 2 1/2 cups of water. Put the lid on and let it come to a boil while you halve the tomatoes and, in a bowl, mix them with 1 tablespoon of olive oil and 1 tablespoon of red wine vinegar. Taste, season with salt and pepper, and tear in most of the basil leaves.",
+      "Cut the fish into 4 equal pieces and place them in a pan, pushing them into the rice. Scatter over the dressed tomatoes. Put the lid back on and boil for 10 minutes or until the rice is cooked through, then remove the lid and cook for a further 2 minutes until all the liquid has evaporated. Spoon the remaining tapenade over the fish, pick over the remaining basil leaves, drizzle lightly with olive oil, and dish up."
+    ],
+    "notes": "Source: Jamie Oliver Cookbook",
+    "tags": [
+      "Fish",
+      "Stove",
+      "Main",
+      "Dinner"
+    ]
   }
 ]
