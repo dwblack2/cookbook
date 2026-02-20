@@ -3238,5 +3238,44 @@
       "Baked",
       "Dinner"
     ]
+  },
+  {
+    "title": "Chicken Jalfrezi",
+    "ready_in": "45 Minutes",
+    "servings": "4",
+    "temperature": "",
+    "ingredients": [
+      "3 tablespoons vegetable oil",
+      "2 red or yellow bell peppers (or a combination), cut into 1-inch chunks",
+      "2 large yellow onions, 1 onion cut into 1-inch chunks and 1 onion finely diced",
+      "Kosher salt, preferably Diamond Crystal",
+      "6 garlic cloves, finely grated",
+      "1 (2-inch) piece ginger, peeled and finely grated",
+      "1 serrano chile, thinly sliced, plus more if desired for serving",
+      "2 teaspoons ground cumin",
+      "2 teaspoons ground coriander",
+      "1 teaspoon garam masala",
+      "1 teaspoon Kashmiri chile powder (see Tip)",
+      "\u00bd teaspoon ground turmeric",
+      "1 (14-ounce) can crushed tomatoes (see Tip)",
+      "2 pounds boneless, skinless chicken thighs, cut into 2-inch pieces",
+      "1 teaspoon sugar",
+      "1 to 2 teaspoons rice vinegar or white vinegar",
+      "Basmati rice rice or naan (homemade or storebought), for serving"
+    ],
+    "instructions": [
+      "Heat a large high-sided skillet over high. Add 1 tablespoon oil and swirl to coat the bottom of the pan. Add the bell pepper and onion chunks. Cook, stirring once halfway through the cook, until crisp-tender and charred in spots, about 5 minutes. Transfer to a plate.",
+      "Reduce heat to medium and add the remaining 2 tablespoons oil, the finely diced onion, and 2 teaspoons salt. Cook, stirring often and scraping up any browned bits, until onion is softened and beginning to brown, 5 to 7 minutes.",
+      "Add garlic, ginger, serrano, cumin, coriander, garam masala, chile powder and turmeric and stir constantly to toast the spices until fragrant, about 30 seconds. Add crushed tomatoes and 1 teaspoon of salt and stir to combine. Cook until deepened in color and beginning to stick to the bottom of the pan, 6 to 8 minutes.",
+      "Add chicken and 1 cup water and stir to combine. Increase heat to medium-high and cook, stirring occasionally, until the chicken has cooked through and the gravy has thickened, about 12 minutes.",
+      "Stir in reserved bell pepper and onion chunks, sugar and vinegar to taste. Cook until warmed through, about 1 minute. Serve with basmati rice or naan, topped with more serrano chile if desired."
+    ],
+    "notes": "Notes: To substitute Kashmiri chile powder, use \u00bd teaspoon paprika and \u00bc to \u00bd teaspoon ground cayenne, depending on your heat tolerance.\nTo substitute crushed tomatoes, use 1 pound of diced plum tomatoes (5 or 6 medium) and 2 tablespoons tomato paste, adding the tomato paste with the spices.\nSource: NYT Cooking",
+    "tags": [
+      "Chicken",
+      "Stove",
+      "Dinner",
+      "Main"
+    ]
   }
 ]
