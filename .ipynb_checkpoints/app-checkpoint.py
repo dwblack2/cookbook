@@ -266,9 +266,7 @@ if selected_title == "":
 
     # ---- Sort by Recipes count ----
     tag_df = tag_df.sort_values("Recipes", ascending=True)
-
-    st.subheader("Recipe Overview")
-
+    
     # ---- Container styling ----
     st.markdown(
         """
