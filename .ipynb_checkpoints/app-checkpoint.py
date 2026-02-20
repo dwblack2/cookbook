@@ -295,7 +295,8 @@ if selected_title == "":
         font=dict(family="Helvetica", color="#556277"),
         xaxis=dict(showgrid=False, title=""),
         yaxis=dict(title="", categoryorder="total ascending"),
-        margin=dict(l=10, r=10, t=10, b=10)
+        margin=dict(l=10, r=10, t=10, b=10),
+        height=280
     )
 
     fig.update_traces(
