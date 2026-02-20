@@ -274,7 +274,6 @@ if selected_title == "":
         """
         <div style="
             background-color: #f5f8fc;
-            padding: 16px;
             border-radius: 12px;
         ">
         """,
@@ -293,7 +292,7 @@ if selected_title == "":
     fig.update_layout(
         plot_bgcolor="#f5f8fc",
         paper_bgcolor="#f5f8fc",
-        font=dict(family="Helvetica", color="#556277", size=14),
+        font=dict(family="Helvetica", color="#556277", size=20),
         xaxis=dict(showgrid=False, title=""),
         yaxis=dict(title="", categoryorder="total ascending"),
         margin=dict(l=10, r=10, t=10, b=10)
