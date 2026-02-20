@@ -301,15 +301,28 @@ if selected_title == "":
     )
     
     fig.update_layout(
-        plot_bgcolor="#E4EAF2",
-        paper_bgcolor="#E4EAF2",
+        plot_bgcolor="#E4EAF2",      # plotting area
+        paper_bgcolor="#E4EAF2",     # entire figure
         font=dict(family="Helvetica", color="#556277"),
-        xaxis=dict(showgrid=False, title=""),
-        yaxis=dict(title="", categoryorder="total ascending", automargin=True),
-        height=350,                         
+        xaxis=dict(
+            showgrid=False,
+            showline=False,          # removes x-axis line
+            showticklabels=True,
+            zeroline=False,          # removes zero line
+            title=""
+        ),
+        yaxis=dict(
+            showgrid=False,
+            showline=False,          # removes y-axis line
+            showticklabels=True,
+            zeroline=False,
+            title="",
+            categoryorder="total ascending",
+            automargin=True
+        ),
+        height=350,
         showlegend=False,
-        margin=dict(l=0, r=0, t=0, b=0), 
-        autosize=True,
+        margin=dict(l=0, r=0, t=0, b=0),  # completely remove white margin
     )
     
     fig.update_traces(
