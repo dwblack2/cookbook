@@ -308,7 +308,7 @@ if selected_title == "":
         yaxis=dict(title="", categoryorder="total ascending", automargin=True),
         height=350,                         
         showlegend=False,
-        margin=dict(l=10, r=10, t=10, b=10), 
+        margin=dict(l=0, r=0, t=0, b=0), 
         autosize=True,
     )
     
