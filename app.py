@@ -3,6 +3,8 @@ import os
 import streamlit as st
 import requests
 import base64
+from collections import Counter
+import pandas as pd
 
 ## Save new recipes permanently to recipes.json in github
 def save_recipes(recipes_list):
@@ -104,6 +106,15 @@ def load_recipes():
         return []
 
 recipes = load_recipes()
+# Recipe Metrics 
+def get_tag_counts(recipes):
+    tags = []
+    for r in recipes:
+        tags.extend([t.strip().lower() for t in r.get("tags", [])])
+    return Counter(tags)
+
+tag_counts = get_tag_counts(recipes)
+total_recipes = len(recipes)
 
 # Load any JSON file from GitHub using the API
 def load_github_json(file_path):
@@ -205,9 +216,24 @@ else:
 
 # Main display
 if selected_title == "":
-    total_recipes = len(recipes)
-
     st.markdown(f"### {total_recipes} recipes and counting!")
+
+    st.subheader("📊 Recipe Overview")
+    cols = st.columns(4)
+    cols[0].metric("Total Recipes", total_recipes)
+    cols[1].metric("Chicken", tag_counts.get("chicken", 0))
+    cols[2].metric("Vegetarian", tag_counts.get("vegetarian", 0))
+    cols[3].metric("Fish", tag_counts.get("fish", 0))
+
+    if tag_counts:
+        tag_df = (
+            pd.DataFrame(tag_counts.items(), columns=["Tag", "Recipes"])
+            .sort_values("Recipes", ascending=True)
+        )
+        tag_df["Tag"] = tag_df["Tag"].str.title()
+
+        st.subheader("Recipes by Category")
+        st.bar_chart(tag_df.set_index("Tag"), horizontal=True)
 
     st.markdown("""
     ## Welcome
@@ -217,6 +243,7 @@ if selected_title == "":
     - Add new recipes
     - Delete recipes and restore them later
     """)
+    
 else:
     selected_recipe = next((r for r in filtered_recipes if r.get("title") == selected_title), None)
     if selected_recipe:
@@ -295,7 +322,6 @@ else:
             st.rerun()
     else:
         st.warning("Recipe not found.")
-
 
 ##### Styling #####
 st.markdown("""
