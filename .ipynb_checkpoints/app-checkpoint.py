@@ -290,16 +290,13 @@ if selected_title == "":
     )
 
     fig.update_layout(
+        marker_color="#556277",
         plot_bgcolor="#f5f8fc",
         paper_bgcolor="#f5f8fc",
         font=dict(family="Helvetica", color="#556277"),
         xaxis=dict(showgrid=False, title=""),
         yaxis=dict(title="", categoryorder="total ascending"),
-        margin=dict(l=10, r=10, t=10, b=10)
-    )
-
-    fig.update_traces(
-        marker_color="#556277",
+        margin=dict(l=10, r=10, t=10, b=10), 
         textposition="outside",
         hovertemplate="<b>%{y}</b><br>%{x} recipes<br>%{customdata[0]} of total<extra></extra>",
         customdata=tag_df[["Percent Label"]]
