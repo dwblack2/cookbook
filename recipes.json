@@ -3563,5 +3563,28 @@
       "Oven",
       "Main"
     ]
+  },
+  {
+    "title": "Sweet Potato Salad",
+    "ready_in": "1 hour",
+    "servings": "2",
+    "temperature": "350\u00b0F",
+    "ingredients": [
+      "2 large sweet potatoes",
+      "1 lb ripe mixed color tomatoes",
+      "4 scallions",
+      "1 1/2 oz arugula",
+      "Olive oil",
+      "Red wine vinegar"
+    ],
+    "instructions": [
+      "Preheat the oven to 350\u00b0F. Scrub the sweet potatoes clean, place them in a roasting pan, and bake for one hour or until soft through",
+      "Once done, chop the tomatoes, trim scallions, then toss it all with 1 tbsp olive oil and a splash of red wine vinegar. Taste and season with salt and pepper",
+      "Tear the soft sweet potatoes between two plates. Toss the arugula through the tomatoes, then pile on top. Drizzle with 1 tsp of olive oil, and sprinkle with pepper"
+    ],
+    "notes": "Source: Jamie Oliver Cookbook",
+    "tags": [
+      "Side"
+    ]
   }
 ]
