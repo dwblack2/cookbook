@@ -3636,5 +3636,33 @@
       "Baked",
       "Dinner"
     ]
+  },
+  {
+    "title": "Peanut Chicken",
+    "ready_in": "12 minutes",
+    "servings": "2 ",
+    "temperature": "Broiler on medium-high",
+    "ingredients": [
+      "2 chicken breasts",
+      "2 limes",
+      "4 cloves garlic",
+      "2 heaping tablespoons of peanut butter",
+      "1-2 fresh red chili",
+      "Olive oil"
+    ],
+    "instructions": [
+      "Turn the broiler in to medium-high. Score the chicken breasts in a criss-cross fashion, rub with 1 tbsp olive oil, a pinch of salt and pepper, and the finely grated zest of 1 lime. Place criss-cross side down in the Dutch oven/ oven-safe frying pan and put it on a medium high heat on the stove.",
+      "Peel and grate the garlic into a bowl. Squeeze in the juice from 1.5 limes, stir in the peanut butter, and loosen with enough water to give you a spoonable consistency. Finely slice the chili, then mix it through the sauce, taste, and continue seasoning.",
+      "Flip the chicken over, spoon the sauce, then transfer to the broiler, roughly 4 inches from the heat, for 5 minutes or until cooked through.",
+      "Finely grate over the remaining lime zest, then drizzle with 1 tbsp olive oil. Serve with lime wedges to squeeze over."
+    ],
+    "notes": "Source: Jamie Oliver Website ",
+    "tags": [
+      "Chicken",
+      "Oven",
+      "Stove",
+      "Main",
+      "Dinner"
+    ]
   }
 ]
