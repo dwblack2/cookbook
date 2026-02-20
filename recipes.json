@@ -3277,5 +3277,40 @@
       "Dinner",
       "Main"
     ]
+  },
+  {
+    "title": "Maple Harissa Chicken With Butternut Squash",
+    "ready_in": "1 hour",
+    "servings": "4-6",
+    "temperature": "400\u00b0F",
+    "ingredients": [
+      "2 \u00bd to 3 pounds bone-in, skin-on chicken thighs (about 7 chicken thighs)",
+      "Fine sea salt",
+      "2 tablespoons harissa paste, to taste",
+      "2 tablespoons maple syrup",
+      "2 tablespoons olive oil",
+      "1\u00bd tablespoons soy sauce",
+      "1\u00bd teaspoons ground cumin",
+      "1\u00bd teaspoons sweet paprika",
+      "3 garlic cloves, minced or pressed",
+      "\u00bd butternut squash (about 1\u00bc pounds), peeled and cut into 1-inch pieces",
+      "1 cup/6 ounces frozen edamame",
+      "Chopped cilantro (optional), for garnish",
+      "Couscous, rice or flatbread, for serving"
+    ],
+    "instructions": [
+      "Heat the oven to 400 degrees. Add the chicken thighs to the sheet pan and season them on both sides with \u00be teaspoon salt total.",
+      "Make the marinade: Combine the harissa, maple syrup, olive oil, soy sauce, cumin, paprika, garlic, \u00be teaspoon salt and 2 tablespoons water in a small bowl and stir to mix.",
+      "Add the butternut squash to the sheet pan with the chicken. Pour the marinade on top and use your hands to coat the chicken and squash on all sides. Arrange the chicken, skin side up, and the squash in a single layer. (Set the bowl aside.) Roast the mixture for 30 minutes, until the chicken starts to brown.",
+      "In the bowl containing the marinade, add the edamame and toss to coat with the leftover marinade.",
+      "When the chicken has roasted for 30 minutes, remove the pan from the oven, scatter the edamame on the pan and roast for 10 to 15 minutes more, until the chicken is cooked through and golden and the squash is lightly charred.",
+      "Garnish with cilantro if desired, and serve immediately, with couscous, rice or flatbread."
+    ],
+    "notes": "Source: NYT Cooking",
+    "tags": [
+      "Chicken",
+      "Main",
+      "Baked"
+    ]
   }
 ]
