@@ -3495,5 +3495,41 @@
       "Dinner",
       "Stove"
     ]
+  },
+  {
+    "title": "Sticky Coconut Chicken and Rice",
+    "ready_in": "45 minutes",
+    "servings": "4",
+    "temperature": "375\u00b0F",
+    "ingredients": [
+      "1\u00bd pounds boneless, skinless chicken thighs, each thigh cut into 2 equal-size pieces",
+      "\u00bc cup neutral oil, such as safflower or canola",
+      "2 teaspoons kosher salt (Diamond Crystal)",
+      "\u00bd teaspoon black pepper",
+      "2 tablespoons minced fresh ginger",
+      "1 tablespoon minced garlic",
+      "1\u00bd cups short-grain white rice, rinsed until water runs clear",
+      "1\u00be cups low-sodium chicken broth",
+      "1(13.5-ounce) can full-fat coconut milk",
+      "1 yellow bell pepper, cored, seeded and chopped (\u00bd-inch pieces)",
+      "\u00bd cup roasted cashews, coarsely chopped",
+      "3 scallions, green and white parts, thinly sliced (\u00bd packed cup)",
+      "2 tablespoons coarsely chopped cilantro",
+      "Hot sauce, for serving"
+    ],
+    "instructions": [
+      "Heat oven to 375 degrees. Rub chicken with 1 tablespoon of oil, and season with 1 teaspoon of salt and \u00bc teaspoon of pepper.",
+      "In a large Dutch oven, heat 2 tablespoons of the oil over medium. Working in two batches, brown chicken, turning halfway, until no longer pink, around 5 minutes per batch. Transfer to a plate.",
+      "Add the remaining 1 tablespoon oil, the ginger and the garlic to the empty pot, and stir until fragrant, 30 seconds. Add rice and stir until evenly coated in the oil. Add broth, coconut milk, bell pepper, cashews, scallions and the remaining 1 teaspoon salt and \u00bc teaspoon pepper. Stir to lift up any browned bits on the bottom of the pot. Arrange chicken on top, add any accumulated juices from the plate and bring to a boil over high.",
+      "Cover and bake until all of the liquid is absorbed, rice is tender and chicken is cooked through, 25 minutes. Scatter cilantro over the chicken and rice, then divide among bowls. Serve with hot sauce."
+    ],
+    "notes": "Source: NYT Cooking",
+    "tags": [
+      "Chicken",
+      "Dinner",
+      "Baked",
+      "Oven",
+      "Stove"
+    ]
   }
 ]
