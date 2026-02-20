@@ -7,6 +7,10 @@ from collections import Counter
 import pandas as pd
 import plotly.express as px
 
+## Store selected tag from bar chart 
+if "selected_tag" not in st.session_state:
+    st.session_state.selected_tag = None
+
 ## Save new recipes permanently to recipes.json in github
 def save_recipes(recipes_list):
     """ Save the recipes list back to GitHub using the GitHub Contents API. Overwrites recipes.json with a new commit. """
@@ -154,15 +158,23 @@ st.markdown("<h1>Delaney's Cookbook!</h1>", unsafe_allow_html=True)
 search_term = st.sidebar.text_input("Search recipes by title, ingredient, or tag")
 
 # Filter recipes based on search (sidebar)
+filtered_recipes = recipes
+
+# Search filter
 if search_term:
     filtered_recipes = [
-        r for r in recipes
+        r for r in filtered_recipes
         if search_term.lower() in r.get("title", "").lower()
         or any(search_term.lower() in ing.lower() for ing in r.get("ingredients", []))
         or any(search_term.lower() in tag.lower() for tag in r.get("tags", []))
     ]
-else:
-    filtered_recipes = recipes
+
+# --- NEW: tag filter from bar chart ---
+if st.session_state.selected_tag:
+    filtered_recipes = [
+        r for r in filtered_recipes
+        if st.session_state.selected_tag in [t.lower() for t in r.get("tags", [])]
+    ]
 
 # Recipe dropdown (sidebar)
 recipe_titles = sorted([r.get("title", "Untitled") for r in filtered_recipes])
@@ -307,7 +319,17 @@ if selected_title == "":
     fig.update_layout(
     height=400)
 
-    st.plotly_chart(fig, use_container_width=True)
+    bar_click = st.plotly_chart(fig, use_container_width=True)
+
+    if bar_click and hasattr(bar_click, "selection") and bar_click.selection:
+        selected_category = bar_click.selection["points"][0]["y"]
+        st.session_state.selected_tag = selected_category.lower()
+
+    if st.session_state.selected_tag:
+    st.button(
+        f"Clear filter: {st.session_state.selected_tag.title()}",
+        on_click=lambda: st.session_state.update({"selected_tag": None})
+    )
 
     st.markdown("</div>", unsafe_allow_html=True)
     
