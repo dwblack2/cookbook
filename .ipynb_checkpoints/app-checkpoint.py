@@ -6,6 +6,7 @@ import base64
 from collections import Counter
 import pandas as pd
 import plotly.express as px
+from streamlit_plotly_events import plotly_events
 
 ## Store selected tag from bar chart 
 if "selected_tag" not in st.session_state:
@@ -319,7 +320,16 @@ if selected_title == "":
     fig.update_layout(
     height=400)
 
-    bar_click = st.plotly_chart(fig, use_container_width=True)
+    bar_click = selected_points = plotly_events(
+        fig,
+        click_event=True,
+        hover_event=False,
+        select_event=False,
+        override_height=500,
+    )
+
+    if selected_points:
+        st.session_state.selected_tag = selected_points[0]["y"].lower()
 
     if bar_click and hasattr(bar_click, "selection") and bar_click.selection:
         selected_category = bar_click.selection["points"][0]["y"]
