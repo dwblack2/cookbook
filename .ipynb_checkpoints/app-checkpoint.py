@@ -205,6 +205,10 @@ else:
 
 # Main display
 if selected_title == "":
+    total_recipes = len(recipes)
+
+    st.markdown(f"### {total_recipes} recipes and counting!")
+
     st.markdown("""
     ## Welcome
     Here you can:
