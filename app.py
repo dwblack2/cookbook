@@ -326,10 +326,10 @@ if selected_title == "":
         st.session_state.selected_tag = selected_category.lower()
 
     if st.session_state.selected_tag:
-    st.button(
-        f"Clear filter: {st.session_state.selected_tag.title()}",
-        on_click=lambda: st.session_state.update({"selected_tag": None})
-    )
+        st.button(
+            f"Clear filter: {st.session_state.selected_tag.title()}",
+            on_click=lambda: st.session_state.update({"selected_tag": None})
+        )
 
     st.markdown("</div>", unsafe_allow_html=True)
     
