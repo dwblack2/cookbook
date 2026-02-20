@@ -292,7 +292,7 @@ if selected_title == "":
     fig.update_layout(
         plot_bgcolor="#f5f8fc",
         paper_bgcolor="#f5f8fc",
-        font=dict(family="Helvetica", color="#556277", size=20),
+        font=dict(family="Helvetica", color="#556277"),
         xaxis=dict(showgrid=False, title=""),
         yaxis=dict(title="", categoryorder="total ascending"),
         margin=dict(l=10, r=10, t=10, b=10)
