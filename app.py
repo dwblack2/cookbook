@@ -238,9 +238,7 @@ if selected_title == "":
     - Delete recipes and restore them later
     """)
     
-    st.markdown(f"### {total_recipes} recipes and counting!")
-
-    st.subheader("Recipe Overview")
+    st.markdown(f"**{total_recipes}** recipes and counting!")
 
     DISPLAY_TAGS = ["chicken", "vegetarian", "fish", "side", "dessert"]
     
@@ -256,7 +254,7 @@ if selected_title == "":
     
     tag_df["Category"] = tag_df["Category"].str.title()
     
-    st.subheader("Recipes by Category")
+    st.subheader("Recipe Overview")
     
     st.markdown(
         """
