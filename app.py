@@ -299,49 +299,44 @@ if selected_title == "":
         orientation="h",
         text="Recipes",
     )
-
+    
     fig.update_layout(
         plot_bgcolor="#E4EAF2",
         paper_bgcolor="#E4EAF2",
         font=dict(family="Helvetica", color="#556277"),
         xaxis=dict(showgrid=False, title=""),
-        yaxis=dict(title="", categoryorder="total ascending"),
-        margin=dict(l=10, r=10, t=10, b=10),
-        height=80
+        yaxis=dict(title="", categoryorder="total ascending", automargin=True),
+        margin=dict(l=120, r=20, t=20, b=20),  # <-- CRITICAL FIX
+        height=350,                            # <-- SINGLE height
+        showlegend=False,
+        autosize=True,
     )
-
+    
     fig.update_traces(
         marker_color="#556277",
         textposition="outside",
         hovertemplate="<b>%{y}</b><br>%{x} recipes<br>%{customdata[0]} of total<extra></extra>",
-        customdata=tag_df[["Percent Label"]]
+        customdata=tag_df[["Percent Label"]],
     )
-
-    fig.update_layout(
-    height=400)
-
-    bar_click = selected_points = plotly_events(
+    
+    # ---- Clickable chart ----
+    selected_points = plotly_events(
         fig,
         click_event=True,
         hover_event=False,
         select_event=False,
-        override_height=500,
     )
-
+    
+    # ---- Handle selection ----
     if selected_points:
         st.session_state.selected_tag = selected_points[0]["y"].lower()
-
-    if bar_click and hasattr(bar_click, "selection") and bar_click.selection:
-        selected_category = bar_click.selection["points"][0]["y"]
-        st.session_state.selected_tag = selected_category.lower()
-
-    if st.session_state.selected_tag:
+    
+    # ---- Clear filter button ----
+    if st.session_state.get("selected_tag"):
         st.button(
             f"Clear filter: {st.session_state.selected_tag.title()}",
             on_click=lambda: st.session_state.update({"selected_tag": None})
         )
-
-    st.markdown("</div>", unsafe_allow_html=True)
     
 else:
     selected_recipe = next((r for r in filtered_recipes if r.get("title") == selected_title), None)
