@@ -296,25 +296,20 @@ if selected_title == "":
         font=dict(family="Helvetica", color="#556277", size=14),
         xaxis=dict(showgrid=False, title=""),
         yaxis=dict(title="", categoryorder="total ascending"),
-        margin=dict(l=20, r=20, t=20, b=20)
+        margin=dict(l=10, r=10, t=10, b=10)
     )
 
     fig.update_traces(
-        marker_color="#b15e6c",
+        marker_color="#556277",
         textposition="outside",
         hovertemplate="<b>%{y}</b><br>%{x} recipes<br>%{customdata[0]} of total<extra></extra>",
         customdata=tag_df[["Percent Label"]]
     )
 
-    st.plotly_chart(fig, use_container_width=True)
+    fig.update_layout(
+    height=400
 
-    # ---- Percent table (optional, clean) ----
-    st.markdown("**Percent of Total Recipes**")
-    st.dataframe(
-        tag_df[["Category", "Recipes", "Percent Label"]],
-        hide_index=True,
-        use_container_width=True
-    )
+    st.plotly_chart(fig, use_container_width=True)
 
     st.markdown("</div>", unsafe_allow_html=True)
     
