@@ -245,6 +245,7 @@ if selected_title == "":
     # ---- Tags to display ----
     DISPLAY_TAGS = ["chicken", "vegetarian", "fish", "side", "dessert"]
 
+    # ---- Filter tag counts ----
     filtered_tag_counts = {
         tag: tag_counts.get(tag, 0)
         for tag in DISPLAY_TAGS
@@ -257,20 +258,18 @@ if selected_title == "":
     )
 
     # ---- Percent of total ----
-    tag_df["Percent"] = (
-        (tag_df["Recipes"] / total_recipes) * 100
-        if total_recipes > 0
-        else 0
-    )
+    tag_df["Percent"] = (tag_df["Recipes"] / total_recipes * 100).round(1) if total_recipes > 0 else 0
+    tag_df["Percent Label"] = tag_df["Percent"].astype(str) + "%"
 
-    # ---- Formatting ----
+    # ---- Format Category names ----
     tag_df["Category"] = tag_df["Category"].str.title()
-    tag_df["Percent Label"] = tag_df["Percent"].round(1).astype(str) + "%"
 
+    # ---- Sort by Recipes count ----
     tag_df = tag_df.sort_values("Recipes", ascending=True)
 
     st.subheader("Recipe Overview")
 
+    # ---- Container styling ----
     st.markdown(
         """
         <div style="
@@ -282,13 +281,34 @@ if selected_title == "":
         unsafe_allow_html=True
     )
 
-    # ---- Bar Chart ----
-    st.bar_chart(
-        tag_df.set_index("Category")[["Recipes"]],
-        horizontal=True
+    # ---- Plotly horizontal bar chart ----
+    fig = px.bar(
+        tag_df,
+        x="Recipes",
+        y="Category",
+        orientation="h",
+        text="Recipes",
     )
 
-    # ---- Percent table (clean & readable) ----
+    fig.update_layout(
+        plot_bgcolor="#f5f8fc",
+        paper_bgcolor="#f5f8fc",
+        font=dict(family="Helvetica", color="#556277", size=14),
+        xaxis=dict(showgrid=False, title=""),
+        yaxis=dict(title="", categoryorder="total ascending"),
+        margin=dict(l=20, r=20, t=20, b=20)
+    )
+
+    fig.update_traces(
+        marker_color="#b15e6c",
+        textposition="outside",
+        hovertemplate="<b>%{y}</b><br>%{x} recipes<br>%{customdata[0]} of total<extra></extra>",
+        customdata=tag_df[["Percent Label"]]
+    )
+
+    st.plotly_chart(fig, use_container_width=True)
+
+    # ---- Percent table (optional, clean) ----
     st.markdown("**Percent of Total Recipes**")
     st.dataframe(
         tag_df[["Category", "Recipes", "Percent Label"]],
