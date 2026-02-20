@@ -3664,5 +3664,29 @@
       "Main",
       "Dinner"
     ]
+  },
+  {
+    "title": "Crispy Garlicky Chicken",
+    "ready_in": "20 minutes",
+    "servings": "2",
+    "temperature": "",
+    "ingredients": [
+      "2 chicken breasts",
+      "2 thick whole-wheat bread slices",
+      "1 clove garlic",
+      "1 lemon",
+      "1 3/4 oz arugula"
+    ],
+    "instructions": [
+      "Place the chicken breasts between two large sheets of parchment paper, and whack with the base of a large non-stick frying pan to flatten them to about .5 inches thick. Tear the breast into a blender, then peel, chop, and add the garlic, and blitz into fairly fine crumbs. Pour the crumbs over the chicken, roughly pat onto each side, then re-cover with the paper and what again to hammer the crumbs into the chicken and flatten them further.",
+      "Put the pan on medium heat. Fry the chicken in 1 tbsp olive oil for 3 minutes on each side, or until crisp, golden, and cooked through.",
+      "Slice, plate up, and sprinkle with salt and pepper. Sprinkle with lemon-dressed arugula and serve with lemon wedges."
+    ],
+    "notes": "Source: Jamie Oliver Cookbook",
+    "tags": [
+      "Chicken",
+      "Stove",
+      "Dinner"
+    ]
   }
 ]
