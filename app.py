@@ -296,7 +296,7 @@ if selected_title == "":
         xaxis=dict(showgrid=False, title=""),
         yaxis=dict(title="", categoryorder="total ascending"),
         margin=dict(l=10, r=10, t=10, b=10),
-        height=280
+        height=120
     )
 
     fig.update_traces(
