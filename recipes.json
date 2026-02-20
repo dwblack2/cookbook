@@ -3698,5 +3698,35 @@
       "Main",
       "Dinner"
     ]
+  },
+  {
+    "title": "Rice Pilaf",
+    "ready_in": "50 minutes",
+    "servings": "4-6",
+    "temperature": "",
+    "ingredients": [
+      "2 cups white basmati rice",
+      "4 tablespoons unsalted butter, ghee or oil of choice",
+      "1small yellow onion, finely chopped",
+      "4 garlic cloves, finely chopped",
+      "2 teaspoons kosher salt (such as Diamond Crystal)",
+      "\u00bd teaspoon onion powder",
+      "\u00bd teaspoon garlic powder",
+      "\u00bd teaspoon black pepper",
+      "\u00bc teaspoon paprika, smoked or sweet",
+      "3\u00bd cups chicken or vegetable broth or water",
+      "\u00bd cup chopped parsley"
+    ],
+    "instructions": [
+      "In a fine-meshed sieve, rinse the rice with cold water to rid the grains of excess starch. This makes for a fluffier rice that doesn\u2019t clump. Set aside to thoroughly drain.",
+      "In a medium (3\u00bd-quart) saucepan, heat the butter over medium. Add the onion and cook, stirring frequently, until softened, about 7 minutes. Adjust heat to medium-low, add the garlic and cook, stirring frequently, until fragrant, about 2 minutes.",
+      "Adjust heat to medium, add the rice and cook, stirring frequently, until the grains are coated in the butter, are shiny and smell toasty, about 5 minutes. Take care not to burn the garlic, turning down the heat if necessary. Stir in the salt, onion powder, garlic powder, black pepper and paprika, and cook for 1 minute.",
+      "Add the broth, adjust heat to high and bring to a boil. As soon as the broth comes to a boil, cover and turn heat to low. Cook for about 15 minutes, until the water has been absorbed. Remove from the heat and allow the rice to steam, covered, for 10 minutes.",
+      "Gently fluff with a slotted spatula as you fold in the parsley, taking care not to break too many grains, and serve."
+    ],
+    "notes": "Note:  To add noodles: Swap 1 cup of rice for 1 cup of orzo or broken vermicelli, and add with the rice in Step 3. \nSource: NYT Cooking",
+    "tags": [
+      "Side"
+    ]
   }
 ]
