@@ -290,8 +290,8 @@ if selected_title == "":
     )
 
     fig.update_layout(
-        plot_bgcolor="#f5f8fc",
-        paper_bgcolor="#f5f8fc",
+        plot_bgcolor="#E4EAF2",
+        paper_bgcolor="#E4EAF2",
         font=dict(family="Helvetica", color="#556277"),
         xaxis=dict(showgrid=False, title=""),
         yaxis=dict(title="", categoryorder="total ascending"),
