@@ -306,9 +306,9 @@ if selected_title == "":
         font=dict(family="Helvetica", color="#556277"),
         xaxis=dict(showgrid=False, title=""),
         yaxis=dict(title="", categoryorder="total ascending", automargin=True),
-        margin=dict(l=120, r=20, t=20, b=20),  # <-- CRITICAL FIX
-        height=350,                            # <-- SINGLE height
+        height=350,                         
         showlegend=False,
+        margin=dict(l=10, r=10, t=10, b=10), 
         autosize=True,
     )
     
