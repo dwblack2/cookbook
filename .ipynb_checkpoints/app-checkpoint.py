@@ -229,28 +229,6 @@ filtered_tag_counts = {
 }
 
 if selected_title == "":
-    st.markdown(f"### {total_recipes} recipes and counting!")
-
-    st.subheader("📊 Recipe Overview")
-    cols = st.columns(4)
-    cols[0].metric("Total Recipes", total_recipes)
-    cols[1].metric("Chicken", tag_counts.get("chicken", 0))
-    cols[2].metric("Vegetarian", tag_counts.get("vegetarian", 0))
-    cols[3].metric("Fish", tag_counts.get("fish", 0))
-
-    if tag_counts:
-        tag_df = pd.DataFrame(
-            filtered_tag_counts.items(),
-            columns=["Category", "Recipes"]
-        )
-        
-        tag_df["Category"] = tag_df["Category"].str.title()
-        
-        st.subheader("📈 Selected Recipe Categories")
-        st.line_chart(
-            tag_df.set_index("Category")
-        )
-
     st.markdown("""
     ## Welcome
     Here you can:
@@ -259,6 +237,41 @@ if selected_title == "":
     - Add new recipes
     - Delete recipes and restore them later
     """)
+    
+    st.markdown(f"### {total_recipes} recipes and counting!")
+
+    st.subheader("Recipe Overview")
+
+    DISPLAY_TAGS = ["chicken", "vegetarian", "fish", "side", "dessert"]
+    
+    filtered_tag_counts = {
+        tag: tag_counts.get(tag, 0)
+        for tag in DISPLAY_TAGS
+    }
+    
+    tag_df = (
+        pd.DataFrame(filtered_tag_counts.items(), columns=["Category", "Recipes"])
+        .sort_values("Recipes", ascending=True)
+    )
+    
+    tag_df["Category"] = tag_df["Category"].str.title()
+    
+    st.subheader("Recipes by Category")
+    
+    st.markdown(
+        """
+        <div style="
+            background-color: #f5f8fc;
+            padding: 16px;
+            border-radius: 12px;
+        ">
+        """,
+        unsafe_allow_html=True
+    )
+    
+    st.bar_chart(tag_df.set_index("Category"), horizontal=True)
+    
+    st.markdown("</div>", unsafe_allow_html=True)
     
 else:
     selected_recipe = next((r for r in filtered_recipes if r.get("title") == selected_title), None)
