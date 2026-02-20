@@ -5,6 +5,7 @@ import requests
 import base64
 from collections import Counter
 import pandas as pd
+import plotly.express as px
 
 ## Save new recipes permanently to recipes.json in github
 def save_recipes(recipes_list):
@@ -228,6 +229,7 @@ filtered_tag_counts = {
     for tag in DISPLAY_TAGS
 }
 
+##### Main display ######
 if selected_title == "":
     st.markdown("""
     ## Welcome
@@ -237,25 +239,38 @@ if selected_title == "":
     - Add new recipes
     - Delete recipes and restore them later
     """)
-    
+
     st.markdown(f"**{total_recipes}** recipes and counting!")
 
+    # ---- Tags to display ----
     DISPLAY_TAGS = ["chicken", "vegetarian", "fish", "side", "dessert"]
-    
+
     filtered_tag_counts = {
         tag: tag_counts.get(tag, 0)
         for tag in DISPLAY_TAGS
     }
-    
-    tag_df = (
-        pd.DataFrame(filtered_tag_counts.items(), columns=["Category", "Recipes"])
-        .sort_values("Recipes", ascending=True)
+
+    # ---- Build DataFrame ----
+    tag_df = pd.DataFrame(
+        filtered_tag_counts.items(),
+        columns=["Category", "Recipes"]
     )
-    
+
+    # ---- Percent of total ----
+    tag_df["Percent"] = (
+        (tag_df["Recipes"] / total_recipes) * 100
+        if total_recipes > 0
+        else 0
+    )
+
+    # ---- Formatting ----
     tag_df["Category"] = tag_df["Category"].str.title()
-    
+    tag_df["Percent Label"] = tag_df["Percent"].round(1).astype(str) + "%"
+
+    tag_df = tag_df.sort_values("Recipes", ascending=True)
+
     st.subheader("Recipe Overview")
-    
+
     st.markdown(
         """
         <div style="
@@ -266,9 +281,21 @@ if selected_title == "":
         """,
         unsafe_allow_html=True
     )
-    
-    st.bar_chart(tag_df.set_index("Category"), horizontal=True)
-    
+
+    # ---- Bar Chart ----
+    st.bar_chart(
+        tag_df.set_index("Category")[["Recipes"]],
+        horizontal=True
+    )
+
+    # ---- Percent table (clean & readable) ----
+    st.markdown("**Percent of Total Recipes**")
+    st.dataframe(
+        tag_df[["Category", "Recipes", "Percent Label"]],
+        hide_index=True,
+        use_container_width=True
+    )
+
     st.markdown("</div>", unsafe_allow_html=True)
     
 else:
