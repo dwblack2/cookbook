@@ -106,7 +106,7 @@ def load_recipes():
         return []
 
 recipes = load_recipes()
-# Recipe Metrics 
+##### Recipe Metrics #####
 def get_tag_counts(recipes):
     tags = []
     for r in recipes:
@@ -115,6 +115,14 @@ def get_tag_counts(recipes):
 
 tag_counts = get_tag_counts(recipes)
 total_recipes = len(recipes)
+
+DISPLAY_TAGS = [
+    "chicken",
+    "vegetarian",
+    "fish",
+    "side",
+    "dessert"
+]
 
 # Load any JSON file from GitHub using the API
 def load_github_json(file_path):
@@ -214,7 +222,12 @@ if deleted_recipes:
 else:
     st.sidebar.info("Recycle Bin is empty.")
 
-# Main display
+##### Main display ######
+filtered_tag_counts = {
+    tag: tag_counts.get(tag, 0)
+    for tag in DISPLAY_TAGS
+}
+
 if selected_title == "":
     st.markdown(f"### {total_recipes} recipes and counting!")
 
@@ -226,14 +239,17 @@ if selected_title == "":
     cols[3].metric("Fish", tag_counts.get("fish", 0))
 
     if tag_counts:
-        tag_df = (
-            pd.DataFrame(tag_counts.items(), columns=["Tag", "Recipes"])
-            .sort_values("Recipes", ascending=True)
+        tag_df = pd.DataFrame(
+            filtered_tag_counts.items(),
+            columns=["Category", "Recipes"]
         )
-        tag_df["Tag"] = tag_df["Tag"].str.title()
-
-        st.subheader("Recipes by Category")
-        st.bar_chart(tag_df.set_index("Tag"), horizontal=True)
+        
+        tag_df["Category"] = tag_df["Category"].str.title()
+        
+        st.subheader("📈 Selected Recipe Categories")
+        st.line_chart(
+            tag_df.set_index("Category")
+        )
 
     st.markdown("""
     ## Welcome
