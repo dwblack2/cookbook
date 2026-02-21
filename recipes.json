@@ -4014,5 +4014,29 @@
       "Breakfast",
       "Vegetarian"
     ]
+  },
+  {
+    "title": "Greek Yogurt with Cherrry Compote and Pistachios ",
+    "ready_in": "30 minutes",
+    "servings": "4",
+    "temperature": "",
+    "ingredients": [
+      "1.5 cups frozen cherries",
+      "1/2 cup orange juice",
+      "2 tsp honey",
+      "1 cinnamon stick",
+      "1/4 tsp salt",
+      "2 cups Greek yogurt",
+      "2 tbsp finely chopped pistachios"
+    ],
+    "instructions": [
+      "To make compote, combine cherries, orange juice, honey, cinnamon stick, and salt in a small saucepan and bring to a boil over medium heat. Reduce heat to medium low and simmer, stirring occasionally, until cherries soften and liquid begins to thicken slightly, about 12 minutes.",
+      "Transfer to a medium bowl. Remove and discard the cinnamon stick. Let it stand to cool at room temperature. Serve at room temperature or transfer to an airtight container and refrigerate until chilled.",
+      "To serve, top Greek yogurt with compote and chopped pistachios."
+    ],
+    "notes": "Source: Year-Round Fresh Cookbook",
+    "tags": [
+      "Breakfast"
+    ]
   }
 ]
