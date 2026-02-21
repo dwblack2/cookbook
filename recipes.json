@@ -4059,5 +4059,29 @@
     "tags": [
       "Breakfast"
     ]
+  },
+  {
+    "title": "Greek Yogurt with Warm Blueberry Saue",
+    "ready_in": "20 minutes",
+    "servings": "6",
+    "temperature": "",
+    "ingredients": [
+      "2 cups fresh blueberries",
+      "2 tbsp sugar",
+      "2 tbsp water",
+      "1/2 tsp grated lemon zest",
+      "1/2 tsp fresh lemon juice",
+      "Pinch of salt",
+      "3 cups Greek yogurt"
+    ],
+    "instructions": [
+      "Combine blueberries, sugar, and water in a medium saucepan over medium-high heat and bring to a boil. Reduce heat and simmer, stirring occasionally, until most blueberries burst and sauce is slightly thickened, 5-7 minutes.",
+      "Transfer to a medium bowl and stir in lemon zest, lemon juice, and salt. Let cool slightly.",
+      "To serve, top Greek yogurt with blueberries."
+    ],
+    "notes": "Source: Year-Round Fresh Cookbook",
+    "tags": [
+      "Breakfast"
+    ]
   }
 ]
