@@ -3777,5 +3777,35 @@
     "tags": [
       "Side"
     ]
+  },
+  {
+    "title": "Sausage and Apple Bake",
+    "ready_in": "45 minutes",
+    "servings": "4",
+    "temperature": " 350\u00b0F",
+    "ingredients": [
+      "2 large red onions",
+      "2 apples",
+      "4 parsnips",
+      "12 small pork sausages",
+      "1 tbsp honey",
+      "Red wine vinegar",
+      "Olive Oil"
+    ],
+    "instructions": [
+      "Preheat the oven to  350\u00b0F. Place the Dutch oven on medium-high heat on the stove, Peel the onions, cut into quarters, and quickly break apart in the pan, tossing regularly, then add 1 tbsp olive oil and salt and pepper.",
+      "Quarter and core the apples, then toss into the pan.",
+      "Use a vegetable peeler to peel the parsnips into long strips. Stir 1 tbsp of red wine vinegar into the frying pan, then pile the parsnip strips in top of the apples and onions.",
+      "Lay the sausages on top, then drizzle with 1 tbsp olive oil and add a pinch of pepper. bake for 30 minutes, then drizzle over the honey and return to the oven for 5 minutes, or until golden."
+    ],
+    "notes": "Source: Jamie Oliver Cookbook",
+    "tags": [
+      "Dinner",
+      "Main",
+      "Oven",
+      "Baked",
+      "Stove",
+      "Sausage"
+    ]
   }
 ]
