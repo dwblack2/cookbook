@@ -4292,5 +4292,35 @@
       "Stove",
       "Fish"
     ]
+  },
+  {
+    "title": "Plum and Blackberry Crisp with Pistachio Crumble",
+    "ready_in": "1 hour",
+    "servings": "8",
+    "temperature": "350\u00b0F",
+    "ingredients": [
+      "4 large plums, pitted and thinly sliced",
+      "3 cups fresh blackberries",
+      "2 tbsp flour",
+      "2 tbsp lemon zest",
+      "1/4 tsp cardamom",
+      "1/2 cup old-fashioned oats",
+      "1/4 cup packed light brown sugar",
+      "2 tbsp unsalted butter",
+      "1/4 tsp salt",
+      "1/4 cup finely chopped pistachios",
+      "Vanilla ice cream (optional)"
+    ],
+    "instructions": [
+      "Preheat oven to 350\u00b0F. Spray and 8x8 inch baking disk with nonstick spray.",
+      "Combine plums, blackberries, flour, lemon zest, and cardamom in a large bowl and toss to coat evenly. Pour fruit mixture into the baking dish.",
+      "Combine oats, brown sugar, butter, and salt in a medium bowl. Using your fingers, combine butter evenly into the oat mixture. Stir in pistachios. Sprinkle evenly over the fruit mixture.",
+      "Bake until topping is golden brown and fruit is soft and bubbling, 30-35 minutes.",
+      "Transfer to a wire rack. Let cool at least 15 minutes before serving. Serve with vanilla ice cream, if desired."
+    ],
+    "notes": "Source: Year-Rouch Fresh Cookbook",
+    "tags": [
+      "Dessert"
+    ]
   }
 ]
