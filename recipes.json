@@ -4038,5 +4038,26 @@
     "tags": [
       "Breakfast"
     ]
+  },
+  {
+    "title": "Raspberry Peach smoothie",
+    "ready_in": "5 minutes",
+    "servings": "4",
+    "temperature": "",
+    "ingredients": [
+      "2 ripe peaches, peeled and pitted",
+      "2 6-oz. packages of fresh raspberries or 2 1/3 cups frozen raspberries.",
+      "1.5 cups Greek yogurt",
+      "2/3 cup milk",
+      "1 tbsp honey",
+      "3 ice cubes"
+    ],
+    "instructions": [
+      "Blend everything."
+    ],
+    "notes": "Source: Year-Round Fresh Cookbook",
+    "tags": [
+      "Breakfast"
+    ]
   }
 ]
