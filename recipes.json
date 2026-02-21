@@ -4168,5 +4168,39 @@
       "Vegetarian",
       "Side"
     ]
+  },
+  {
+    "title": "Asian Chicken with Carrot Cucumber Slaw",
+    "ready_in": "30 minutes, plus 30 minutes to marinate",
+    "servings": "4",
+    "temperature": "",
+    "ingredients": [
+      "4 chicken breasts",
+      "2 tbsp soy sauce",
+      "2 tbsp lime juice",
+      "1 garlic clove, minced",
+      "2 tsp chopped fresh ginger",
+      "2 tsp honey",
+      "2 tsp canola oil",
+      "1.5 tsp dark sesame oil",
+      "3/4 tsp salt",
+      "3 radishes, cut into matchsticks",
+      "1 small carrot, cut into matchsticks",
+      "1/2 cucumber, cut into matchsticks",
+      "2 tbsp minced cilantro",
+      "1 tbsp minced fresh mint"
+    ],
+    "instructions": [
+      "Combine chicken, soy sauce, 1 tbsp of lime juice, garlic, ginger, 1 tsp honey, 1 tsp canola oil, and 1 tsp sesame oil in a large ziploc bag. Squeeze out air and marinate in fridge for 30 minutes.",
+      "Whisk together the remaining lime juice, honey, canola oil, sesame oil, and 1/4 tsp salt in a small bowl and set aside. Combine the radishes, carrot, cucumber, cilantro and mint in a large bowl and set aside.",
+      "Remove the chicken from the marinade. Sprinkle the chicken with 1/2 tsp salt. Cook over medium heat on the stove (or in the oven) until cooked through.",
+      "Add lime juice mixture to the vegetables and toss to coat. Serve the chicken with the salad."
+    ],
+    "notes": "Source: Year-Round Fresh Cookbook",
+    "tags": [
+      "Dinner",
+      "Chicken",
+      "Stove"
+    ]
   }
 ]
