@@ -3857,5 +3857,27 @@
     "tags": [
       "Side"
     ]
+  },
+  {
+    "title": "Cherry Chocolate Mousse",
+    "ready_in": "30 minutes",
+    "servings": "6",
+    "temperature": "",
+    "ingredients": [
+      "7 oz dark chocolate",
+      "1 can black pitted cherries in syrup",
+      "3/4 cup + 5 teaspoons heavy cream",
+      "4 large eggs",
+      "2 teaspoons sugar"
+    ],
+    "instructions": [
+      "Melt the chocolate in a heatproof bowl over a pan of gently simmering water, then remove to cool for 10 minutes. Meanwhile, simmer the cherries and their syrup in a pan on medium heat until thick, then remove.",
+      "Whip the cream to very soft peaks. Separate the eggs, then add the yolks to the cream with the sugar and whisk to combine. Add a pinch of sea salt to the whites and, with a clean whisk, beat until super stiff. fold the cooled chocolate into the cream then very gently fold that through the egg whites with a spatula.",
+      "Divvy up the mouse between six glasses or bowls, interspersing the cherries and syrup throughout, and finishing with a few cherries on top."
+    ],
+    "notes": "Source: Jamie Oliver Cookbook",
+    "tags": [
+      "Dessert"
+    ]
   }
 ]
