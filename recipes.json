@@ -3903,5 +3903,29 @@
     "tags": [
       "Dessert"
     ]
+  },
+  {
+    "title": "Plum Tarte Tatin",
+    "ready_in": "24 minutes",
+    "servings": "6",
+    "temperature": "425\u00b0F",
+    "ingredients": [
+      "1.5 lb ripe plums",
+      "1 teaspoon ground cinnamon",
+      "1/2 cup maple syrup",
+      "11 oz sheet of puff pastry (cold)",
+      "6 large scoops of vanilla ice cream"
+    ],
+    "instructions": [
+      "Preheat the oven to 425\u00b0F.",
+      "Place the Dutch oven over medium heat. Halve and pit the plums, add to the pan with 2 tbsp water, and cook for 1 minute. Sprinkle over half the cinnamon, then evenly pour over the maple syrup.",
+      "Place the pastry over the plums, using a wooden spoon to push it into the edges of the pan, and trimming off any excess to patch up gaps, if needed.",
+      "Bake at the bottom of the oven for 16 minutes or until golden and puffed up.",
+      "Carefully turn the tarte out onto a plate bigger than the pan upside down. Dish up with ice cream, sprinkle the remaining cinnamon, and drizzle lightly with olive oil to serve."
+    ],
+    "notes": "Source: Jamie Oliver Cookbook",
+    "tags": [
+      "Dessert"
+    ]
   }
 ]
