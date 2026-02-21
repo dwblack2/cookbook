@@ -4083,5 +4083,34 @@
     "tags": [
       "Breakfast"
     ]
+  },
+  {
+    "title": "Peach, Tomato, and Avocado Salad",
+    "ready_in": "15 minutes",
+    "servings": "4",
+    "temperature": "",
+    "ingredients": [
+      "1/4 cup fresh parsley",
+      "1/4 cup fresh cilantro",
+      "2 tbsp orange juice",
+      "2 tsp olive oil",
+      "2 tsp lime juice",
+      "1 tsp honey",
+      "1/2 tsp salt",
+      "1/4 tsp pepper",
+      "Pinch of cayenne",
+      "3 ripe peaches, pitted and cut into wedges",
+      "2 large tomatoes, cored and cut into wedges1/2 small red onion, thinly sliced",
+      "1.2 ripe avocado, diced"
+    ],
+    "instructions": [
+      "To make vinaigrette, combine parsley, cilantro, orange juice, oil, lime juice,  honey, salt, pepper, and cayenne in small blender and puree.",
+      "Arrange peaches, tomatoes, and onions pretty. Top with avocado, then drizzle the vinaigrette when ready to serve."
+    ],
+    "notes": "Source: Year-Round Fresh Cookbook",
+    "tags": [
+      "Side",
+      "Vegetarian"
+    ]
   }
 ]
