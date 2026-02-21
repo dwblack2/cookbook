@@ -4260,5 +4260,37 @@
       "Dinner",
       "Baked"
     ]
+  },
+  {
+    "title": "Skillet Cod and Summer Vegetables",
+    "ready_in": "45 minutes",
+    "servings": "4",
+    "temperature": "",
+    "ingredients": [
+      "4 cod fillets",
+      "2 tsp olive oil",
+      "1 red onion, chopped",
+      "1 yellow bell pepper, diced",
+      "1 small zucchini, diced",
+      "1/2 eggplant, diced",
+      "1 garlic clove, minced",
+      "1 large tomato, diced",
+      "1/2 cup strained tomatoes",
+      "2 tbsp tomato paste",
+      "1 tsp salt",
+      "1/4 tsp pepper",
+      "1/4 cup chopped fresh basil"
+    ],
+    "instructions": [
+      "Heat oil in the Dutch oven over medium heat. Add onion, bell pepper, zucchini, eggplant, and garlic, and cook covered, stirring occasionally, until vegetables are softened, about 10 minutes.",
+      "Add toato, strained tomatoes, tomato paste, 1/2 tsp salt, and 1/2 tsp pepper and cook, stirring occasionally, until vegetables are tender, about 5 minutes.",
+      "Sprinkle fish with remaining salt and pepper. Arrange fish in a single layer on top of the vegetables. Reduce heat to low and simmer, covered, until the fish is just opaque in the center, about 10 minutes. Sprinkle with basil just before serving."
+    ],
+    "notes": "Source: Year-Rouch Fresh Cookbook",
+    "tags": [
+      "Dinner",
+      "Stove",
+      "Fish"
+    ]
   }
 ]
