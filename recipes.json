@@ -3979,5 +3979,40 @@
       "Chicken",
       "Stove"
     ]
+  },
+  {
+    "title": "Skillet Ratatouille with Eggs",
+    "ready_in": "",
+    "servings": "4",
+    "temperature": "",
+    "ingredients": [
+      "1 tsp olive oil",
+      "1 small red onion, finely chopped",
+      "2 garlic cloves, minced",
+      "1 small bell pepper, diced",
+      "1 zucchini, diced",
+      "1 large tomato, chopped",
+      "1/2 eggplant, diced",
+      "2 tbsp tomato paste",
+      "3/4 tsp salt",
+      "1/2 tsp herbs de Provence",
+      "1/4 cup kalamata olives, pitted and chopped",
+      "1/4 cup plus 2 tbsp fresh basil",
+      "1 tbsp balsamic vinegar",
+      "4 large eggs"
+    ],
+    "instructions": [
+      "Heat oil in the Dutch oven over medium heat. Add onion and garlic and cook until onion begins to soften, about 3 minutes.",
+      "Add bell pepper, zucchini, tomato, eggplant, tomato paste, salt, and herbs de Provence and cook until veggies are tender, about 10 minutes.",
+      "Stir in olives, 1/4 cup of basil, and vinegar.",
+      "With the back of a spoon, make 4 indentations in the vegetables. Crack an. egg into each indent.",
+      "Reduce heat to low, cover, and cook until egg whites are opaque and yolks begin to set, about 5 minutes.",
+      "Sprinkle with remaining basil to serve."
+    ],
+    "notes": "Source: Year-Round Fresh Cookbook",
+    "tags": [
+      "Breakfast",
+      "Vegetarian"
+    ]
   }
 ]
