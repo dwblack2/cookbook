@@ -3949,5 +3949,35 @@
     "tags": [
       "Dessert"
     ]
+  },
+  {
+    "title": "Grilled Chicken with Mint Chimichurri",
+    "ready_in": "25 minutes",
+    "servings": "4",
+    "temperature": "",
+    "ingredients": [
+      "4 chicken breasts",
+      "1 cup packed fresh mint",
+      "2/3 cup loosely packed fresh parsley",
+      "3 tbsp whine wine vinegar",
+      "1 tbsp olive oil",
+      "1 tbsp water",
+      "2 garlic cloves",
+      "3/4 tsp salt",
+      "1/4 tsp red pepper flakes",
+      "1/2 tsp cumin",
+      "1/4 tsp black pepper"
+    ],
+    "instructions": [
+      "Spray grill rack with nonstick spray. Preheat grill to medium-high.",
+      "Meanwhile, prepare the chimichurri by combining the mint, parsley, vinegar, oil, water, garlic, 1/4 tsp salt, and red pepper flakes in the small blender & puree.",
+      "Sprinkle the chicken with cumin, remaining salt, and black pepper. Place chicken on grill and cook. Serve with chimichurri."
+    ],
+    "notes": "Source: Year-Round Fresh Cookbook",
+    "tags": [
+      "Dinner",
+      "Chicken",
+      "Stove"
+    ]
   }
 ]
