@@ -3927,5 +3927,27 @@
     "tags": [
       "Dessert"
     ]
+  },
+  {
+    "title": "Walnut Whip Affogato",
+    "ready_in": "9 minutes",
+    "servings": "4",
+    "temperature": "",
+    "ingredients": [
+      "1 3/4 oz oz dark chocolate",
+      "1 1/2 tablespoons unsalted butter",
+      "1 3/4 oz shelled walnut halves",
+      "4 large scoops vanilla ice cream",
+      "4 shots of espresso"
+    ],
+    "instructions": [
+      "Melt the chocolate and butter with a pinch of sea salt in a heat proof bowl over a pan of gently simmering water, then remove.",
+      "Reserving 4 walnut halves for decoration, slice or crumble up the rest.",
+      "Scoop the ice cream and divide between 4 tea cups. Scatter over the sliced or crumbled walnuts, pour a shot of hot espresso into each cup, stick a walnut on top, then drizzle over the melted chocolate."
+    ],
+    "notes": "Source: Jamie Oliver Cookbook",
+    "tags": [
+      "Dessert"
+    ]
   }
 ]
