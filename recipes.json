@@ -3833,5 +3833,29 @@
       "Main",
       "Stove"
     ]
+  },
+  {
+    "title": "Baked Saffron Rice",
+    "ready_in": "26 minutes",
+    "servings": "4",
+    "temperature": "400\u00b0F",
+    "ingredients": [
+      "2 red onions",
+      "2 small pinches of saffron",
+      "4 heaping tablespoons plain yogurt",
+      "4 tablespoons sun-dried tomato paste",
+      "1.5 cups white basmati rice"
+    ],
+    "instructions": [
+      "Preheat the oven to 400\u00b0F.",
+      "Peel and finely chop red onions. Place in the Dutch oven on high heat on the stove, pour 1 tbsp olive oil, and add red onions. Fry for 4 minutes or until soft and sweet, stirring frequently.",
+      "Meanwhile, place half of the saffron into 2.5 cups boiling water. In a bowl, cover the remaining saffron with 1 tbsp of boiling watter, steep for 10 seconds, then mix with the yogurt and set aside.",
+      "Stir the tomato paste, rice, and a pinch of salt and pepper into the onion pan, then pour in the saffron water and bring to a boil. Once boiling, carefully transfer to the oven for 15 minutes, or until the rice has absorbed all the liquid and is crisp on top.",
+      "Spoon the saffron yogurt over the rice, drizzle with 1 tbsp olive oil, then serve."
+    ],
+    "notes": "Source: Jamie Oliver Cookbook",
+    "tags": [
+      "Side"
+    ]
   }
 ]
