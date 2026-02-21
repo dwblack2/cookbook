@@ -4231,5 +4231,34 @@
       "Steak",
       "Stove"
     ]
+  },
+  {
+    "title": "Flatbread Prosciutto and Salad Pizza",
+    "ready_in": "20 minutes",
+    "servings": "4",
+    "temperature": "450\u00b0F",
+    "ingredients": [
+      "2 naans",
+      "1/4 c sun-dried tomato pesto",
+      "3/4 tsp red pepper flakes",
+      "2 tsp lemon juice",
+      "2 tsp olive oil",
+      "1 tsp red wine vinegar",
+      "5 cups baby arugula",
+      "4 slices of prosciutto, cut into thin strips",
+      "2 roma tomatoes, thinly sliced"
+    ],
+    "instructions": [
+      "Preheat oven to 450\u00b0F.",
+      "Place naans on large baking sheet. Spread tomato pesto on each and sprinkle with red pepper flakes. bake until naan is browned on the bottom, about 6 minutes.",
+      "Meanwhile, whisk together the oil, lemon juice, vinegar, and salt in a large bowl. When naans are done, add arugula to bowl and toss to coat.",
+      "Top pizzas with prosciutto and tomatoes, then with arugula salad."
+    ],
+    "notes": "Source: Year-Round Fresh Cookbook",
+    "tags": [
+      "Oven",
+      "Dinner",
+      "Baked"
+    ]
   }
 ]
