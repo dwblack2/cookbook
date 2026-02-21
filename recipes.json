@@ -3807,5 +3807,31 @@
       "Stove",
       "Sausage"
     ]
+  },
+  {
+    "title": "Peachy Porkchpos",
+    "ready_in": "20 minutes",
+    "servings": "2",
+    "temperature": "",
+    "ingredients": [
+      "2 8 oz porkchops, with rind",
+      "4 cloves garlic",
+      "2 sprigs of fresh rosemary",
+      "1 can of peach halves in juice"
+    ],
+    "instructions": [
+      "Preheat the broiler to high. Slice the rind off the porkchops, score the fat side in a criss-cross fashion, and place skin-side up in the pan. Prop under the broiler for 5 minutes to crisp, keeping an eye on it.",
+      "Season the porkchops with salt and pepper, score the remaining fat, then sit the chops together fat edges down in a large cold non-stick frying pan.",
+      "Place on a high heat for 3 to 4 minutes, or until golden and the fat has rendered out, using tongs to ensure they're in good contact with the pan.",
+      "Gently turn the chops on their sides to cook for 5 minutes on each side.",
+      "Meanwhile, peel and finely slice the garlic. Strip the rosemary leaves off the sprigs. Remove the porkchops from the pan, drain 90% of the fat from the pan, then sprinkle the garlic into the pan.",
+      "Stir regularly until golden, then add the rosemary and four drained peach halves, flat side down. Jiggle over the heat until golden, then return the porkchops to the pan, and keep cooking until browned and looking good."
+    ],
+    "notes": "Source: Jamie Oliver Cookbook",
+    "tags": [
+      "Pork",
+      "Main",
+      "Stove"
+    ]
   }
 ]
