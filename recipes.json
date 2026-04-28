@@ -4355,5 +4355,37 @@
     "tags": [
       "Dessert"
     ]
+  },
+  {
+    "title": "Italian Sub Bread",
+    "ready_in": "2 hours",
+    "servings": "4",
+    "temperature": "375\u00b0",
+    "ingredients": [
+      "1 c warm water",
+      "2 tsp (1 packet) yeast",
+      "1 tbsp honey",
+      "3 c flour",
+      "2 tbsp olive oil",
+      "1 egg",
+      "2 tsp salt"
+    ],
+    "instructions": [
+      "Whisk together the warm water, yeast, and honey. Cover and let sit in a dark place for 10 minutes.",
+      "After 10 minutes, combine the flour, olive oil, egg, salt, and the yeast mixture in the stand mixer. Knead on speed 2 for 10 minutes.",
+      "Remove dough from bowl, grease with olive oil, and return to bowl.",
+      "Cover and let rise in a dark place for 1 hour",
+      "Cover a sheet pan with parchment paper.",
+      "Punch the air out. On a clean surface, divide the dough into 4 equal size balls.",
+      "Roll each ball out to the width of the sheet pan you're using. Line them up on the baking sheet.",
+      "Let rise 30 minutes, covered.",
+      "Score dough with a sharp knife. Brush with olive oil and sprinkle Italian seasoning on top.",
+      "Bake at 375\u00b0 for 15 minutes"
+    ],
+    "notes": "",
+    "tags": [
+      "Bread",
+      "Baked"
+    ]
   }
 ]
