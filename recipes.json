@@ -4414,5 +4414,39 @@
       "Oven",
       "Baked"
     ]
+  },
+  {
+    "title": "Chicken Fajitas",
+    "ready_in": "40 minutes",
+    "servings": "4",
+    "temperature": "425\u00b0F",
+    "ingredients": [
+      "6 tablespoons olive oil",
+      "1 lime, zested and juiced (about 2 teaspoons zest and 2 tablespoons juice)",
+      "1 to 2 chipotle chiles in adobo, to taste, coarsely chopped",
+      "2 teaspoons ground cumin or crushed cumin seeds",
+      "1 teaspoon smoked paprika",
+      "Kosher salt and black pepper",
+      "1\u00bd pounds boneless, skinless chicken breasts or thighs, cut into \u00bd-inch-thick slices",
+      "3 bell peppers, any color or a combination",
+      "1 large red onion",
+      "8 flour tortillas, plus more as needed"
+    ],
+    "instructions": [
+      "Heat the oven to 425 degrees. In a medium bowl, stir together 4 tablespoons oil, the lime zest and juice, chipotle chiles, cumin and paprika with 1\u00bd teaspoons salt and \u00bc teaspoon pepper. Add the chicken, toss to coat and set aside to marinate while you prepare the vegetables.",
+      "Cut bell peppers in half lengthwise, remove stem and seeds and cut into \u00bc-inch slices. Peel and halve the onion and cut it into \u00bc-inch slices. On a sheet pan, toss the bell peppers and onion with the remaining 2 tablespoons oil, \u00bd teaspoon salt and \u00bc teaspoon pepper.",
+      "Gently shaking off excess marinade as you go, transfer the chicken to a second sheet pan. Roast the chicken and vegetables until the chicken is cooked through and the peppers are soft, 15 to 20 minutes.",
+      "Once the chicken is out of the oven, move an oven rack close to the broiler. Turn on the broiler and transfer the sheet pan of vegetables to the rack. Broil until charred to your liking, 2 to 5 minutes.",
+      "While the vegetables are broiling, place the tortillas directly on a free oven rack until warm, about 1 minute, flipping once halfway through. Wrap the tortillas in a kitchen towel or foil to keep them warm.",
+      "Serve chicken and vegetables with tortillas and desired toppings."
+    ],
+    "notes": "Source: NYT Cooking",
+    "tags": [
+      "Chicken",
+      "Main",
+      "Dinner",
+      "Baked",
+      "Sheetpan"
+    ]
   }
 ]
