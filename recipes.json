@@ -4448,5 +4448,33 @@
       "Baked",
       "Sheetpan"
     ]
+  },
+  {
+    "title": "Challah",
+    "ready_in": "4 hours",
+    "servings": "6 loaves",
+    "temperature": "375\u00b0F",
+    "ingredients": [
+      "1\u00bd packages active dry yeast (about 3\u00bd teaspoons)",
+      "1 tablespoon plus \u00bd cup sugar or honey",
+      "\u00bd cup vegetable oil or butter, more for greasing bowl",
+      "5 large eggs",
+      "1 tablespoon salt",
+      "8 to 8\u00bd cups all-purpose flour"
+    ],
+    "instructions": [
+      "In a large bowl, dissolve yeast and 1 tablespoon sugar in 1\u00be cups lukewarm water.",
+      "Whisk oil into yeast, then beat in 4 eggs, one at a time, with remaining sugar and salt. Gradually add flour. When dough holds together, it is ready for kneading. (You can also use a mixer with a dough hook for both mixing and kneading.)",
+      "Turn dough onto a floured surface and knead until smooth. Clean out bowl and grease it, then return dough to bowl. Cover with plastic wrap, and let rise in a warm place for 1 hour, until almost doubled in size. Dough may also rise in an oven that has been warmed to 150 degrees then turned off. Punch down dough, cover and let rise again in a warm place for another half-hour.",
+      "Divide dough into 18 same-size balls. Roll out 3 balls at a time and braid the loaves. Place side by side on a sheet pan lined with parchment paper, 3 loaves per sheetpan.",
+      "Beat remaining egg and brush it on loaves. Either freeze breads or let rise another hour.",
+      "If baking immediately, preheat oven to 375 degrees and brush loaves again. If freezing, remove from freezer 5 hours before baking. Then dip your index finger in the egg wash, then into poppy or sesame seeds and then onto a mound of bread. Continue until bread is decorated with seeds.",
+      "Bake in middle of oven for 35 to 40 minutes, or until golden. Cool loaves on a rack."
+    ],
+    "notes": "Flavor ideas: chocolate chip, Nutella, poppy seed, pesto, cinnamon sugar, everything bagel, Italian\nSource: NYT Cooking",
+    "tags": [
+      "Bread",
+      "Baked"
+    ]
   }
 ]
