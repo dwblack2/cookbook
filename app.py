@@ -213,12 +213,6 @@ else:
     st.sidebar.info("Recycle Bin is empty.")
 
 ##### Main display ######
-filtered_tag_counts = {
-    tag: tag_counts.get(tag, 0)
-    for tag in DISPLAY_TAGS
-}
-
-##### Main display ######
 if selected_title == "":
     st.markdown("""
     ## Welcome
@@ -231,42 +225,6 @@ if selected_title == "":
 
     st.markdown(f"**{total_recipes}** recipes and counting!")
 
-    # ---- Tags to display ----
-    DISPLAY_TAGS = ["chicken", "vegetarian", "fish", "side", "dessert"]
-
-    # ---- Filter tag counts ----
-    filtered_tag_counts = {
-        tag: tag_counts.get(tag, 0)
-        for tag in DISPLAY_TAGS
-    }
-
-    # ---- Build DataFrame ----
-    tag_df = pd.DataFrame(
-        filtered_tag_counts.items(),
-        columns=["Category", "Recipes"]
-    )
-
-    # ---- Percent of total ----
-    tag_df["Percent"] = (tag_df["Recipes"] / total_recipes * 100).round(1) if total_recipes > 0 else 0
-    tag_df["Percent Label"] = tag_df["Percent"].astype(str) + "%"
-
-    # ---- Format Category names ----
-    tag_df["Category"] = tag_df["Category"].str.title()
-
-    # ---- Sort by Recipes count ----
-    tag_df = tag_df.sort_values("Recipes", ascending=True)
-    
-    # ---- Container styling ----
-    st.markdown(
-        """
-        <div style="
-            background-color: #f5f8fc;
-            border-radius: 12px;
-        ">
-        """,
-        unsafe_allow_html=True
-    )
-    
     # ---- Handle selection ----
     if selected_points:
         st.session_state.selected_tag = selected_points[0]["y"].lower()
