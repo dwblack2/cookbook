@@ -4941,5 +4941,30 @@
       "Main",
       "Stove"
     ]
+  },
+  {
+    "title": "Roasted Carrots",
+    "ready_in": "1 hour",
+    "servings": "6",
+    "temperature": "400\u00b0F",
+    "ingredients": [
+      "2 pounds carrots",
+      "1 teaspoon fresh thyme leaves",
+      "3 tablespoons extra virgin olive oil",
+      "Salt",
+      "freshly ground pepper",
+      "\u00bd teaspoon dried oregano",
+      "3 tablespoons finely chopped flat-leaf parsley"
+    ],
+    "instructions": [
+      "Heat the oven to 400 degrees. Meanwhile, peel the carrots and cut into 2-inch segments, then quarter or cut into sixths lengthwise depending on size. Chop the thyme.",
+      "Oil a sheet pan or a baking dish large enough to fit all of the carrots in a single layer. Place the carrots in a large bowl, and toss with the olive oil, salt, pepper, thyme and oregano. Spread in an even layer in the prepared pan or baking dish. Cover with foil, and place in the oven for 20 to 30 minutes. Uncover, and if the carrots are not yet tender, turn the heat down to 375 degrees and return to the oven for 5 to 10 more minutes. (For caramelized edges, roast uncovered for all, or part, of the cooking time.)",
+      "Add the parsley, stir gently, and taste and adjust salt and pepper. Serve hot, warm or at room temperature."
+    ],
+    "notes": "Source: NYT Cooking",
+    "tags": [
+      "Side",
+      "Baked"
+    ]
   }
 ]
