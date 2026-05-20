@@ -112,12 +112,6 @@ def load_recipes():
         return []
 
 recipes = load_recipes()
-##### Recipe Metrics #####
-def get_tag_counts(recipes):
-    tags = []
-    for r in recipes:
-        tags.extend([t.strip().lower() for t in r.get("tags", [])])
-    return Counter(tags)
 
 tag_counts = get_tag_counts(recipes)
 total_recipes = len(recipes)
@@ -168,13 +162,6 @@ if search_term:
         if search_term.lower() in r.get("title", "").lower()
         or any(search_term.lower() in ing.lower() for ing in r.get("ingredients", []))
         or any(search_term.lower() in tag.lower() for tag in r.get("tags", []))
-    ]
-
-# --- NEW: tag filter from bar chart ---
-if st.session_state.selected_tag:
-    filtered_recipes = [
-        r for r in filtered_recipes
-        if st.session_state.selected_tag in [t.lower() for t in r.get("tags", [])]
     ]
 
 # Recipe dropdown (sidebar)
@@ -289,55 +276,6 @@ if selected_title == "":
         ">
         """,
         unsafe_allow_html=True
-    )
-
-    # ---- Plotly horizontal bar chart ----
-    fig = px.bar(
-        tag_df,
-        x="Recipes",
-        y="Category",
-        orientation="h",
-        text="Recipes",
-    )
-    
-    fig.update_layout(
-        plot_bgcolor="#E4EAF2",      # plotting area
-        paper_bgcolor="#E4EAF2",     # entire figure
-        font=dict(family="Helvetica", color="#556277"),
-        xaxis=dict(
-            showgrid=False,
-            showline=False,          # removes x-axis line
-            showticklabels=True,
-            zeroline=False,          # removes zero line
-            title=""
-        ),
-        yaxis=dict(
-            showgrid=False,
-            showline=False,          # removes y-axis line
-            showticklabels=True,
-            zeroline=False,
-            title="",
-            categoryorder="total ascending",
-            automargin=True
-        ),
-        height=350,
-        showlegend=False,
-        margin=dict(l=0, r=0, t=0, b=0),  # completely remove white margin
-    )
-    
-    fig.update_traces(
-        marker_color="#556277",
-        textposition="outside",
-        hovertemplate="<b>%{y}</b><br>%{x} recipes<br>%{customdata[0]} of total<extra></extra>",
-        customdata=tag_df[["Percent Label"]],
-    )
-    
-    # ---- Clickable chart ----
-    selected_points = plotly_events(
-        fig,
-        click_event=True,
-        hover_event=False,
-        select_event=False,
     )
     
     # ---- Handle selection ----
