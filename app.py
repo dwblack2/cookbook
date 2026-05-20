@@ -113,17 +113,6 @@ def load_recipes():
 
 recipes = load_recipes()
 
-tag_counts = get_tag_counts(recipes)
-total_recipes = len(recipes)
-
-DISPLAY_TAGS = [
-    "chicken",
-    "vegetarian",
-    "fish",
-    "side",
-    "dessert"
-]
-
 # Load any JSON file from GitHub using the API
 def load_github_json(file_path):
     token = st.secrets["github_token"]
