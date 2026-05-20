@@ -223,8 +223,6 @@ if selected_title == "":
     - Delete recipes and restore them later
     """)
 
-    st.markdown(f"**{total_recipes}** recipes and counting!")
-
     # ---- Handle selection ----
     if selected_points:
         st.session_state.selected_tag = selected_points[0]["y"].lower()
