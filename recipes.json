@@ -4476,5 +4476,40 @@
       "Bread",
       "Baked"
     ]
+  },
+  {
+    "title": "Lemon Cake With Strawberries and Cream",
+    "ready_in": "1 hour 15 minutes, plus cooling time",
+    "servings": "8 servings",
+    "temperature": "350\u00b0F",
+    "ingredients": [
+      "1 tablespoon unsalted butter",
+      "1\u2153 cups/140 grams sifted cake flour, plus more for the pan",
+      "6 large eggs",
+      "\u00be cup/150 grams granulated sugar",
+      "1 teaspoon grated lemon zest",
+      "\u00bd teaspoon vanilla extract",
+      "Pinch of salt",
+      "\u00be cup/92 grams powdered sugar",
+      "2 tablespoons lemon juice",
+      "2 tablespoons limoncello or triple sec",
+      "1 cup/240 milliliters heavy cream",
+      "\u00bd pound/225 grams ripe strawberries, hulled, rinsed and thickly sliced, quartered or halved"
+    ],
+    "instructions": [
+      "Heat oven to 350 degrees. Butter and flour a 9-inch springform pan and set aside.",
+      "Prepare the cake: Place the flour in a large bowl and set aside. In a stand mixer fitted with the whisk attachment, beat eggs at medium speed. Add granulated sugar, lemon zest, vanilla extract and salt. Beat until mixture is quite thick and nearly holds peaks, about 10 minutes. Quickly fold into the flour.",
+      "Pour the batter into the prepared pan, smoothing the top. Bake until a skewer emerges cleanly when inserted into the middle of the cake, 20 to 25 minutes. Cool on a rack in the pan. (It's fine to make the cake a day or two in advance.)",
+      "Flip the cake onto a platter, leaving the flat surface on top.",
+      "Make the glaze: Stir together \u00bd cup powdered sugar, 1 tablespoon of the lemon juice and the limoncello until all the sugar has dissolved. Brush all of the glaze over the cake.",
+      "Whip cream and 2 tablespoons of the remaining powdered sugar to form very soft peaks \u2014 don\u2019t overwhip.",
+      "In a medium bowl, toss strawberries with remaining tablespoon lemon juice and the remaining 2 tablespoons powdered sugar.",
+      "Spoon strawberries on the cake and top with whipped cream to cover the berries. Refrigerate for 2 to 3 hours, if desired. Cut into wedges to serve."
+    ],
+    "notes": "Source: NYT Cooking",
+    "tags": [
+      "Cake",
+      "Dessert"
+    ]
   }
 ]
