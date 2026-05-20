@@ -213,14 +213,19 @@ else:
     st.sidebar.info("Recycle Bin is empty.")
 
 ##### Main display ######
+##### Main display ######
+total_recipes = len(recipes)
+
 if selected_title == "":
-    st.markdown("""
+    st.markdown(f"""
     ## Welcome
     Here you can:
     - Select an existing recipe
     - Search by title, ingredient, or tag
     - Add new recipes
     - Delete recipes and restore them later
+                
+    This cookbook currently displays {total_recipes} recipes.
     """)
     
     # ---- Clear filter button ----
