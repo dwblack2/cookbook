@@ -4944,5 +4944,33 @@
       "Main",
       "Stove"
     ]
+  },
+  {
+    "title": "Green Goddess Chicken Meatballs",
+    "ready_in": "25 minutes",
+    "servings": "18 meatballs",
+    "temperature": "400\u00b0F",
+    "ingredients": [
+      "\u00be cup homemade or store-bought green goddess dressing, plus more for serving",
+      "\u00be cup panko bread crumbs",
+      "1 large egg",
+      "4 scallions, thinly sliced",
+      "2 garlic cloves, grated",
+      "Grated zest of 1 lemon",
+      "Salt and black pepper",
+      "1 pound ground chicken",
+      "Olive oil, for forming the meatballs"
+    ],
+    "instructions": [
+      "Heat the oven to 400 degrees.",
+      "Add dressing, panko, egg, scallions, garlic, lemon zest and 1 teaspoon each salt and black pepper to a bowl and mix to combine, ensuring the panko is fully moistened. Add chicken and mix until just combined, being careful not to overmix.",
+      "Using a bit of oil on your hands, form the meat mixture into 18 small balls (about 2 tablespoons each) and place onto a baking sheet. Bake meatballs for 10 minutes, until the bottoms of the meatballs are browned and cooked through, and release easily from the pan. Remove from the oven and let rest for 5 minutes.",
+      "Serve with extra dressing on the side. Cooked meatballs can be refrigerated for up to 5 days and frozen for up to 3 months."
+    ],
+    "notes": "Source: NYT Cooking",
+    "tags": [
+      "Chicken",
+      "Baked"
+    ]
   }
 ]
