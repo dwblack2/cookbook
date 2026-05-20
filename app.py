@@ -222,10 +222,6 @@ if selected_title == "":
     - Add new recipes
     - Delete recipes and restore them later
     """)
-
-    # ---- Handle selection ----
-    if selected_points:
-        st.session_state.selected_tag = selected_points[0]["y"].lower()
     
     # ---- Clear filter button ----
     if st.session_state.get("selected_tag"):
