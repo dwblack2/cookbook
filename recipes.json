@@ -4679,5 +4679,41 @@
       "Main",
       "Baked"
     ]
+  },
+  {
+    "title": "Chicken Manchurian",
+    "ready_in": "45 minutes",
+    "servings": "4",
+    "temperature": "",
+    "ingredients": [
+      "1 egg",
+      "4 tablespoons plus 1 teaspoon cornstarch",
+      "1t easpoon garlic paste or freshly grated garlic",
+      "1 teaspoon black pepper",
+      "Fine sea salt",
+      "1\u00bd pounds boneless, skinless chicken breast, cut into \u00be-inch cubes",
+      "\u2153 cup vegetable oil",
+      "3 whole dried dundicut chiles or bird\u2019s-eye chiles",
+      "\u00bd cup ketchup",
+      "\u00bccup chile-garlic sauce",
+      "2 tablespoons light soy sauce (or regular soy sauce)",
+      "1 cup chicken stock (optional)",
+      "1 bell pepper, halved, seeded and cut into \u00be-inch pieces",
+      "3 spring onions or 1 medium scallion, trimmed and thinly sliced",
+      "Cooked white rice or fried rice, for serving"
+    ],
+    "instructions": [
+      "Velvet the chicken: In a medium bowl, whisk the egg. Continue whisking and gradually add 4 tablespoons of cornstarch until there are no lumps. Stir in garlic, black pepper and \u00bd teaspoon salt. Add the chicken pieces and stir until well coated. Cover and set aside for 30 minutes.",
+      "In a large wok or deep, high-sided skillet, heat oil on medium for 45 seconds. Add chicken (in batches, if necessary to avoid crowding) and cook until it starts turning white, 1 to 2 minutes. Flip the pieces and continue cooking until the chicken starts to turn golden, 2 to 3 minutes. Using a slotted spoon, remove chicken and set aside.",
+      "Add dried chiles and cook on medium for about 1 minute, stirring occasionally.",
+      "Meanwhile, in a small bowl, stir together ketchup, chile-garlic sauce, soy sauce, \u00bd teaspoon salt and, if using, chicken stock (if not using chicken stock, stir in 1 cup water). Add to mixture in pan along with bell pepper and stir to combine.",
+      "Separately, mix the remaining 1 teaspoon cornstarch with \u00bc cup water until smooth. Stir it into the wok and simmer until the sauce thickens and starts to turn glossy, 3 to 4 minutes. Add chicken and stir to combine. Top with spring onions. Serve with rice."
+    ],
+    "notes": "Source: NYT Cooking",
+    "tags": [
+      "Chicken",
+      "Main",
+      "Stove"
+    ]
   }
 ]
