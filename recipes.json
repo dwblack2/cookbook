@@ -4972,5 +4972,35 @@
       "Baked",
       "Main"
     ]
+  },
+  {
+    "title": "Saffron Rice",
+    "ready_in": "30 minutes",
+    "servings": "4",
+    "temperature": "",
+    "ingredients": [
+      "10 saffron strands, ground or 1/8 teaspoon ground saffron",
+      "1 cup basmati rice",
+      "2 tablespoons extra virgin olive oil",
+      "1 small yellow or white onion, finely diced",
+      "1 garlic clove, crushed or minced",
+      "1 1/2 cups vegetable broth, chicken broth, or water",
+      "1 bay leaf",
+      "1 small lime, zested",
+      "Kosher salt"
+    ],
+    "instructions": [
+      "Grind and bloom the saffron: Add the saffron threads to a spice grinder or mortar and pestle. Grind the strands into a fine powder. Mix 1/8 teaspoon of the ground saffron with 3 tablespoons of water. This process is called blooming and will draw the color and complex flavor from the spice far more effectively than using the strands. Set aside to bloom.",
+      "Rinse the rice: Put the rice in a fine mesh strainer and rinse with cold water until the water runs clear.",
+      "Saut\u00e9 the aromatics: In a medium saucepan set over medium-high heat, add the olive oil. When the oil shimmers, add the diced onion. Cook, stirring, until the onion softens and turns translucent. Add the crushed garlic and stir until the aroma is released, about 30 seconds.",
+      "Toast the rice and add the bloomed saffron: Add the rice to the pot with the onions and the garlic and toss until it is well coated in the onion mixture. Add the bloomed saffron liquid and stir until everything is well mixed.",
+      "Add the broth and bring to a boil: Add the broth or water, bay leaf, and lime zest. If you\u2019re using water or low sodium broth, season with a good pinch of kosher salt. Give the mixture a stir, then bring the water to a boil. Once boiling, turn the heat to low and cover the pot. Cook until the rice has absorbed the water, about 15 to 20 minutes.",
+      "Finish and serve: Turn the heat off. Leave the rice, covered and undisturbed, for 5 more minutes. Remove the bay leaf, fluff the rice with a fork and serve."
+    ],
+    "notes": "Source: The Mediterranean Dish\nNotes: \nDon\u2019t skip rinsing your rice! It\u2019s a vital step to make sure it gets fluffy instead of clumpy.\nIf you\u2019re using low sodium broth or water, make sure to add a healthy pinch of salt when you add the broth.\nWhen zesting your lime, be careful not to zest too deep and add the bitter white pith.",
+    "tags": [
+      "Side",
+      "Stove"
+    ]
   }
 ]
