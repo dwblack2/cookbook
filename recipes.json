@@ -5054,5 +5054,27 @@
     "tags": [
       "Stove"
     ]
+  },
+  {
+    "title": "Tomato Salad",
+    "ready_in": "1o minutes",
+    "servings": "4",
+    "temperature": "",
+    "ingredients": [
+      "1 \u00bd tablespoons finely chopped shallot or red onion",
+      "Juice from half a lemon (1\u00bd tablespoons)",
+      "1 \u00bd to 2 pounds ripe tomatoes (such as 3 large or 2 pints)",
+      "Salt",
+      "2 tablespoons extra-virgin olive oil",
+      "20 basil leaves, torn if large"
+    ],
+    "instructions": [
+      "In a large bowl, stir together the shallot and lemon juice. Set aside while you cut the tomatoes.",
+      "Cut the tomatoes into bite-size pieces, adding them to the bowl as you go. Season generously with salt and stir to combine. Gently stir in the olive oil, followed by the basil. Season to taste with salt. Serve right away or let sit, stirring occasionally, for up to 30 minutes."
+    ],
+    "notes": "Source: NYT Cooking",
+    "tags": [
+      "Side"
+    ]
   }
 ]
