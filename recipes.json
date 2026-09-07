@@ -5364,5 +5364,37 @@
       "Fish",
       "Baked"
     ]
+  },
+  {
+    "title": "Marsala Chicken Meatballs",
+    "ready_in": "1 hour",
+    "servings": "4",
+    "temperature": "",
+    "ingredients": [
+      "2 large yellow onions (about 10 ounces each), finely chopped",
+      "\u2153 cup bread crumbs",
+      "1 \u00bc cups dry Marsala wine",
+      "5 tablespoons extra-virgin olive oil",
+      "Salt and pepper",
+      "1 pound ground chicken",
+      "1 pound sliced button or cremini mushrooms",
+      "2 tablespoons all-purpose flour",
+      "Chopped flat-leaf parsley, for serving"
+    ],
+    "instructions": [
+      "To a medium bowl, add 1 cup of chopped onion, plus the bread crumbs, \u00bc cup wine, 2 tablespoons olive oil, a hefty pinch of salt and a few grinds of pepper; mix until combined. Add the chicken and mix until combined. Form the meat mixture into 14 balls (about 3 tablespoons each), setting them on a sheet pan or plate.",
+      "Heat a large (12-inch) heavy skillet or braiser over medium-high, and add the remaining 3 tablespoons of olive oil.",
+      "Sear the meatballs for 2 to 3 minutes, until a dark brown crust forms on the bottoms, then flip, and continue searing for 2 minutes on the other sides. Return the meatballs to the sheet pan or plate.",
+      "Adjust heat to high. Add the remaining onions to the skillet and cook, stirring every 2 minutes, until golden, translucent and slightly darker on the edges, about 6 minutes, turning the heat down as necessary.",
+      "Add the mushrooms and cook for 6 minutes, stirring occasionally, until reduced in volume and slightly darker in color. Sprinkle the flour on top, mix to coat the mushrooms and onion and continue cooking for 1 minute, lowering the heat as needed.",
+      "Carefully pour the remaining 1 cup of wine into the skillet while constantly stirring. Using a wooden spoon, scrape the caramelized bits off the bottom of the pan and cook for 2 minutes, until the wine reaches a thicker, honey-like consistency. Add 1 \u00be cups of water and bring to a vigorous simmer. Season with a hefty pinch of salt.",
+      "Return the meatballs to the skillet. Adjust heat to medium, partially cover and simmer for 12 minutes, until the sauce has thickened slightly and the meatballs are cooked through.",
+      "Taste and season with salt. Sprinkle parsley on top and serve."
+    ],
+    "notes": "Source: NYT Cooking",
+    "tags": [
+      "Chicken",
+      "Stove"
+    ]
   }
 ]
