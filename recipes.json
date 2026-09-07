@@ -5200,5 +5200,34 @@
       "Stove",
       "Curry"
     ]
+  },
+  {
+    "title": "Slow-Cooked Fish With Citrus and Herbs ",
+    "ready_in": "45",
+    "servings": "6",
+    "temperature": "325\u00b0F",
+    "ingredients": [
+      "1 teaspoon saffron threads",
+      "3 medium leeks, trimmed",
+      "\u00be cup extra-virgin olive oil",
+      "6 garlic cloves, thinly sliced",
+      "1 lemon (preferably Meyer), very thinly sliced into rounds, seeds picked out",
+      "1 clementine or mandarin orange, very thinly sliced, seeds picked out",
+      "Salt",
+      "2 \u00bd pounds boneless, skinless halibut, cod or salmon, preferably one large center-cut piece",
+      "\u00bd cup coarsely chopped dill or tarragon or a combination"
+    ],
+    "instructions": [
+      "Heat the oven to 325 degrees. Crush the saffron threads into a fine powder in a mortar and pestle. (If you don\u2019t have a mortar and pestle, use a spoon to crush it as finely as you can.) Dump out the ground saffron into a small bowl and pour 3 tablespoons of warm water over it. Set aside.",
+      "Cut the leeks in half lengthwise then coarsely chop. Give the leeks a good rinse to get rid of any dirt or sand.",
+      "Heat \u00bc cup of oil in a large skillet over medium. Add the leeks and cook, stirring occasionally, until soft but not browned, 6 to 8 minutes. Add the garlic and all citrus slices, season with salt and cook, stirring occasionally, until the garlic and citrus have softened and everything smells very delicious, 2 to 3 minutes. Slide the skillet off the heat and scoop out half the leek mixture into a small bowl.",
+      "Generously season the fish with salt on all sides and place in the center of the skillet over the leeks. Pour the saffron water over and around the fish, then top with the remaining leek mixture. Scatter the dill all over and pour in the remaining \u00bd cup oil. Transfer the skillet to the oven.",
+      "Bake until the fish is opaque and easily flakes off with a fork around the thickest part, 25 to 30 minutes. Serve as is in the skillet or use two forks to tear the fish into large pieces and transfer to a platter. Spoon all the leeks, citrus and fat over, taste and season with more salt if needed, and serve."
+    ],
+    "notes": "Source: NYT Cooking",
+    "tags": [
+      "Fish",
+      "Oven"
+    ]
   }
 ]
