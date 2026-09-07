@@ -5138,5 +5138,33 @@
       "Baked",
       "Main"
     ]
+  },
+  {
+    "title": "Cod Piccata",
+    "ready_in": "35 minutes",
+    "servings": "4",
+    "temperature": "",
+    "ingredients": [
+      "1 lb. cod fillets",
+      "1/3 cup almond flour",
+      "1/2 tsp salt",
+      "2-3 tbsp extra virgin olive oil",
+      "2 tbsp grapeseed oil, divided",
+      "3/4 cup chicken stock",
+      "3 tbsp lemon juice",
+      "1/4 cup capers, drained",
+      "2 tbsp fresh parsley, chopped"
+    ],
+    "instructions": [
+      "Stir the almond flour and salt together in a shallow bowl. Rinse off the fish and pat dry with a paper towel. Dredge the fish in the almond flour mixture to coat.",
+      "Heat enough olive oil to coat the bottom of a large skillet over medium-high heat along with one tablespoon grapeseed oil. Working in batches, add the cod and cook for 2-3 minutes per side to brown. Remove to a plate and set aside.",
+      "Add the chicken stock, lemon juice, and capers to the same skillet and scrape any browned bits off the bottom. Simmer to reduce the sauce by almost half. Remove from heat and stir in the remaining tablespoon of grapeseed oil.",
+      "To serve, divide the cod onto plates, drizzle with the sauce, and sprinkle with parsley."
+    ],
+    "notes": "Source: Paleo Grubs\n",
+    "tags": [
+      "Fish",
+      "Stove"
+    ]
   }
 ]
