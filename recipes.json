@@ -5709,5 +5709,29 @@
       "Breakfast",
       "Stove"
     ]
+  },
+  {
+    "title": "Green Sauce",
+    "ready_in": "10 minutes",
+    "servings": "1 3/4 cups",
+    "temperature": "",
+    "ingredients": [
+      "2 cups coarsely chopped cilantro",
+      "1-2 serrano chiles",
+      "1 tbsp sugar",
+      "1 tsp salt",
+      "1/2 cup extra virgin olive oil",
+      "1/4 cup chile vinegar or rice vinegar",
+      "3 tbsp freshly squeezed lemon juice",
+      "1 tbsp Dijon mustard"
+    ],
+    "instructions": [
+      "In a food processor, combine cilantro, garlic, and chiles, and pulse until finely chopped.",
+      "Add everything else and puree until sauce comes together and herbs are minced."
+    ],
+    "notes": "Source: Good Things Cookbook",
+    "tags": [
+      "Sauce"
+    ]
   }
 ]
