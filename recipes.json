@@ -5259,5 +5259,34 @@
       "Chicken",
       "Soup"
     ]
+  },
+  {
+    "title": "Dijon Chicken With Tomatoes and Scallions",
+    "ready_in": "40 minutes",
+    "servings": "4",
+    "temperature": "",
+    "ingredients": [
+      "2 tablespzons olive oil",
+      "1 \u00bd pounds boneless, skinless chicken thighs, patted dry",
+      "Salt and fresh black pepper",
+      "4 scallions, light green and white parts thinly sliced",
+      "3 garlic cloves, grated or minced",
+      "1 tablespoon dried oregano",
+      "1 tablespoon Dijon mustard",
+      "\u00bd cup white wine",
+      "2 pints cherry or grape tomatoes",
+      "\u00bc packed cup cilantro, parsley or basil leaves and tender stems, gently torn or chopped"
+    ],
+    "instructions": [
+      "Heat the oil in a wide pot or deep 12-inch skillet over medium-high until it shimmers. Add the chicken in an even layer and season the top with salt and pepper. Cook, undisturbed, until the chicken is browned and easily releases from the pan, 7 to 9 minutes.",
+      "Flip the chicken and add the scallions to the empty spaces in the pot. Season lightly with salt. Let cook until the scallions soften, about 2 minutes. Add the garlic, oregano, mustard and white wine, turning the chicken pieces over and back again to stir everything together, about 1 minute.",
+      "Add the tomatoes and season with salt. Cook, stirring occasionally and gently pressing the tomatoes with the back of a wooden spoon, until the tomatoes burst and the chicken is cooked through, 10 to 12 minutes more. Add a few tablespoons of water if it looks dry at any point.",
+      "Sprinkle with the cilantro and serve."
+    ],
+    "notes": "Source: NYT Cooking",
+    "tags": [
+      "Fish",
+      "Stove"
+    ]
   }
 ]
