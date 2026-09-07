@@ -5430,5 +5430,34 @@
       "Chicken",
       "Baked"
     ]
+  },
+  {
+    "title": "Sheet-Pan Hot Honey Chicken",
+    "ready_in": "30 minutes",
+    "servings": "4",
+    "temperature": "500\u00b0F",
+    "ingredients": [
+      "\u2153 cup Dijon mustard",
+      "\u2153 cup honey (see Tip)",
+      "\u00bd teaspoon ground cayenne",
+      "1 \u00bc pounds boneless, skinless chicken breasts, patted dry and cut into bite-size pieces",
+      "1 medium head broccoli (about 12 ounces), florets and stem cut into bite-size pieces",
+      "1 medium sweet potato (10 to 12 ounces), cut into bite-size pieces",
+      "1 small or \u00bd medium red onion, cut into bite-size pieces",
+      "3 tablespoons olive oil",
+      "Salt and black pepper"
+    ],
+    "instructions": [
+      "Place a rimmed baking sheet in the oven and heat the oven to 500 degrees.",
+      "Combine the mustard, honey and cayenne in a large bowl. Transfer \u00bc cup to a small bowl for serving and set aside.",
+      "Add the chicken, broccoli, sweet potato and red onion to the large bowl. Drizzle with the olive oil, season with 1 teaspoon of salt and several grinds of pepper, and toss to coat.",
+      "Remove the baking sheet from the oven. Add the chicken and vegetables and spread out in an even layer.",
+      "Return the baking sheet to the oven and adjust the oven temperature to 475 degrees. Roast, stirring a few times, until the chicken is cooked through and the vegetables are tender, 15 to 18 minutes. Taste and season with additional salt and pepper as needed. Serve with the reserved hot honey mustard."
+    ],
+    "notes": "Source: NYT Cooking\nTip: You can use \u2153 cup store-bought hot honey instead of the honey and cayenne.",
+    "tags": [
+      "Chicken",
+      "Baked"
+    ]
   }
 ]
