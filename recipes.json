@@ -5459,5 +5459,41 @@
       "Chicken",
       "Baked"
     ]
+  },
+  {
+    "title": "Chicken and Chickpea Curry (Murgh Chole)",
+    "ready_in": "45 minutes",
+    "servings": "4",
+    "temperature": "",
+    "ingredients": [
+      "\u00bc cup ghee, vegetable oil or canola oil",
+      "1 medium red or white onion, chopped",
+      "1 teaspoon cumin seeds",
+      "1 teaspoon ginger paste or freshly grated ginger",
+      "1 teaspoon garlic paste or freshly grated garlic",
+      "2 pounds boneless, skinless chicken thighs, cut into 1-inch pieces",
+      "1 teaspoon Kashmiri or other red chile powder",
+      "1 teaspoon garam masala",
+      "\u00bc teaspoon turmeric powder",
+      "3 plum tomatoes, chopped, or \u2154 cup canned crushed tomatoes",
+      "4 to 6 Thai green chiles, finely chopped",
+      "1 teaspoon fine sea salt",
+      "1 (15-ounce) can chickpeas, drained",
+      "\u00bd cup chicken stock or water",
+      "2 tablespoons chopped cilantro",
+      "Lemon wedges, for serving",
+      "Rice or roti (optional), for serving"
+    ],
+    "instructions": [
+      "In a medium pot, melt the ghee over high heat. Add the onion and lower the heat to medium. Cook, stirring occasionally, until the onion starts to brown around the edges, about 10 minutes. Stir in the cumin seeds, ginger and garlic.",
+      "Add the chicken and turn the heat up to high. Cook the chicken, stirring occasionally, until most of the liquid from the pot has evaporated and the chicken starts to brown, about 12  minutes. Stir in the chile powder, garam masala and turmeric. Reduce the heat to medium, then add the tomatoes, green chiles and salt. Continue to cook, stirring occasionally, until the tomatoes have broken down a bit, about 5 minutes.",
+      "Add the chickpeas and stock, stirring and scraping the bottom of the pot. Simmer for a few minutes, until the chickpeas are warmed through and the liquid has slightly thickened into a gravy.",
+      "Sprinkle with cilantro and serve with lemon wedges, along with rice or roti if desired."
+    ],
+    "notes": "Source: NYT Cooking",
+    "tags": [
+      "Chicken",
+      "Stove"
+    ]
   }
 ]
