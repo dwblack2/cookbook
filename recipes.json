@@ -5229,5 +5229,35 @@
       "Fish",
       "Oven"
     ]
+  },
+  {
+    "title": "Citrus-Soy Chicken Ramen",
+    "ready_in": "35 minutes",
+    "servings": "4",
+    "temperature": "",
+    "ingredients": [
+      "1 (2-pound) rotisserie chicken",
+      "Salt and pepper",
+      "2 tablespoons olive oil or other oil of your choice",
+      "3 heads garlic, halved crosswise",
+      "2 large yellow onions (about 1 pound), unpeeled, quartered",
+      "1 small bunch cilantro, thick stems cut off and reserved",
+      "3 tablespoons soy sauce, plus more for serving",
+      "6 to 8 ounces thin dried noodles (such as ramen, lo mein or soba)",
+      "2 limes, cut in half",
+      "2 lemons, cut in half",
+      "Sesame seeds or toasted sesame oil, for serving"
+    ],
+    "instructions": [
+      "Pick and shred the meat off the chicken (you should have about 3 \u00bd cups), season with salt and pepper to taste and set aside; save the bones and skin.",
+      "In a large pot or Dutch oven, heat the oil over medium-high. Add the garlic and onions and cook, stirring occasionally, until lightly golden in spots, about 5 minutes. Add the chicken bones and skin, cilantro stems, soy sauce and 8 \u00bd cups of water. Bring to a gentle simmer, and let cook until flavorful with a distinct chicken essence, 15 to 20 minutes. Using a spider or fine-mesh sieve, lift or strain out the vegetables and chicken pieces and discard.",
+      "Bring the broth back up to a simmer. Add the noodles and cook according to the package instructions, then turn off heat.",
+      "To serve, ladle the broth into bowls (tongs work well for the noodles) and add as much chicken as you\u2019d like. Squeeze in lime and lemon juice to taste, then, if you like, toss in the spent citrus halves to let the oils from the peels subtly infuse the broth. Top with cilantro leaves and tender stems, along with sesame seeds or sesame oil and more soy sauce, if desired."
+    ],
+    "notes": "Source: NYT Cooking",
+    "tags": [
+      "Chicken",
+      "Soup"
+    ]
   }
 ]
