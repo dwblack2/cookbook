@@ -5166,5 +5166,39 @@
       "Fish",
       "Stove"
     ]
+  },
+  {
+    "title": "Salmon and Cherry Tomato Curry",
+    "ready_in": "30",
+    "servings": "4",
+    "temperature": "",
+    "ingredients": [
+      "4 (6-ounce) salmon fillets, skin removed",
+      "Salt and freshly ground black pepper",
+      "2 tablespoons ghee or coconut oil",
+      "3 garlic cloves, minced",
+      "1 tablespoon minced fresh ginger",
+      "1 bird\u2019s-eye chile, or other small chile, sliced",
+      "\u00bd teaspoon cumin seeds",
+      "1 pound cherry tomatoes",
+      "\u00bd teaspoon ground coriander",
+      "\u00bd teaspoon ground turmeric",
+      "1 (14-ounce) can coconut milk",
+      "5 ounces chopped fresh spinach or baby spinach",
+      "Cooked rice, for serving",
+      "\u00bc cup torn or chopped mint, basil or cilantro leaves"
+    ],
+    "instructions": [
+      "Season the salmon fillets with salt and pepper on both sides. Set aside.",
+      "In a large lidded skillet or saucepan, melt the ghee over medium heat. Add the garlic, ginger and chile, and cook for 2 to 3 minutes, stirring frequently, until golden brown and fragrant. Season with salt and pepper. Add the cumin seeds and toast for 15 seconds, then stir in the tomatoes, coriander and turmeric.",
+      "Stir in the coconut milk and season with salt to taste. Cook for 6 to 8 minutes, uncovered, until liquid is slightly reduced and the tomato skins are bursting.",
+      "Stir in the spinach and gently nestle the salmon fillets into the curry, submerging as much as possible. Cover and simmer over medium-low until salmon is cooked through, 4 to 7 minutes. Serve over rice and garnish with herbs."
+    ],
+    "notes": "Source: NYT Cooking",
+    "tags": [
+      "Fish",
+      "Stove",
+      "Curry"
+    ]
   }
 ]
