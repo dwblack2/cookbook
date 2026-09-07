@@ -5326,5 +5326,43 @@
       "Chicken",
       "Baked"
     ]
+  },
+  {
+    "title": "Baked Salmon With Harissa and Cherry Tomatoes",
+    "ready_in": "1 hour",
+    "servings": "4",
+    "temperature": "400\u00b0F",
+    "ingredients": [
+      "FOR THE MARINADE",
+      "1 tablespoon cumin seeds",
+      "1 tablespoon coriander seeds",
+      "\u2153 cup finely chopped cilantro, plus more for serving",
+      "3 tablespoons olive oil",
+      "3 tablespoons lemon juice (from 1 large lemon)",
+      "4 teaspoons soy sauce",
+      "1 tablespoon tomato paste",
+      "1 tablespoon maple syrup",
+      "2 to 3 teaspoons harissa, preferably Tunisian (depending on heat preference)",
+      "4 garlic cloves, finely chopped",
+      "\u00be teaspoon sweet paprika",
+      "Fine sea salt and black pepper",
+      "FOR THE SALMON",
+      "4 (6-ounce) center-cut skinless salmon fillets (about 1 \u00bd pounds total)",
+      "8 ounces ripe cherry tomatoes, at room temperature",
+      "3 large shallots, thinly sliced",
+      "1 teaspoon olive oil",
+      "Fine sea salt and black pepper"
+    ],
+    "instructions": [
+      "Make the marinade: Using a mortar and pestle or a spice grinder, lightly crush the cumin and coriander seeds, then transfer to a wide shallow bowl or baking dish. Stir in the remaining marinade ingredients, along with \u00be teaspoon salt and a good grind of pepper.",
+      "Add the salmon fillets to the marinade, spooning it over to coat. Set aside to marinate at room temperature for 20 minutes, or refrigerated for up to 4 hours if getting ahead.",
+      "Heat the oven to 400 degrees. In a shallow 9-by-13-inch baking dish, toss the tomatoes and shallots with the olive oil and a small pinch of salt and a good grind of pepper. Arrange the salmon fillets evenly on top and pour the marinade directly over the fillets.",
+      "Bake until the salmon flakes easily when pressed gently with a fork and the tomatoes have softened, about 22 minutes. Sprinkle the extra cilantro on top and serve directly from the baking dish."
+    ],
+    "notes": "Source: NYT Cooking",
+    "tags": [
+      "Fish",
+      "Baked"
+    ]
   }
 ]
