@@ -5683,5 +5683,31 @@
       "Chicken",
       "Stove"
     ]
+  },
+  {
+    "title": "Fried Eggs and Potatoes ",
+    "ready_in": "30 minutes",
+    "servings": "2-4",
+    "temperature": "",
+    "ingredients": [
+      "\u00bc cup extra-virgin olive oil",
+      "1 large yellow onion, finely chopped",
+      "Kosher salt (such as Diamond Crystal) and black pepper",
+      "\u00bc teaspoon ground turmeric",
+      "1 tablespoon tomato paste",
+      "1 large Yukon Gold potato (about 12 ounces), peeled and diced into \u00bd-inch cubes",
+      "4 large eggs",
+      "Fresh herb of your choice, chopped, for garnish (optional)"
+    ],
+    "instructions": [
+      "In a large (12-inch) nonstick pan with a lid, heat the oil over medium. Add the onion and cook, stirring occasionally, until golden, 7 to 9 minutes. Season with salt, add the turmeric and stir until fragrant, about 30 seconds. Add the tomato paste and cook just to take off the raw taste and deepen its color, stirring and taking care not to burn the paste, about 1 minute.",
+      "Add the potatoes, season with about \u00bd teaspoon salt and a few grinds of pepper, and stir. Cook for about 2 minutes, stirring often, just until the potatoes are no longer raw. Add \u00bc cup water, stir and bring to a simmer. Cover, reduce heat to medium-low and cook, stirring occasionally and adding a tablespoon or two of water if the potatoes are browning too much, until the potatoes are just tender, 7 to 9 minutes. Taste the potatoes and add more salt and pepper to taste, being mindful that the eggs will also be seasoned.",
+      "Make four wells in the potatoes and crack an egg in each well; season the eggs with salt and pepper. With a wooden spoon, gently poke the egg whites (without disturbing the yolk) to make them spread and cook faster. Cover and check every 30 seconds to a minute, until the whites are cooked and the yolk is to your liking, 3 to 5 minutes for a softer yolk. Remove from the heat, sprinkle with herbs, if using, and serve."
+    ],
+    "notes": "Source: NYT Cooking",
+    "tags": [
+      "Breakfast",
+      "Stove"
+    ]
   }
 ]
