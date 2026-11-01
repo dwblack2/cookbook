@@ -5851,5 +5851,41 @@
       "Dinner",
       "Baked"
     ]
+  },
+  {
+    "title": "White Bean Shakshuka",
+    "ready_in": "45 minutes",
+    "servings": "4",
+    "temperature": "",
+    "ingredients": [
+      "2 tablespoons olive oil",
+      "1 large white onion, diced",
+      "Fine sea salt",
+      "6 garlic cloves, minced",
+      "2 medium tomatoes, chopped",
+      "1 medium jalape\u00f1o, cut in half lengthwise",
+      "1 (15-ounce) can cannellini beans or other white beans, rinsed",
+      "\u00bd cup store-bought or homemade marinara sauce",
+      "1 handful cilantro leaves, finely chopped, plus more for serving",
+      "2 teaspoons ground cumin",
+      "\u00bd teaspoon dried oregano",
+      "\u00bc teaspoon paprika",
+      "\u215b teaspoon ground pepper",
+      "4 large eggs",
+      "Toasted bread or cooked white rice (both optional), for serving"
+    ],
+    "instructions": [
+      "In a large cast-iron skillet, heat 1 tablespoon of oil over medium heat until shimmering, about 1 minute. Stir in the onion, season with salt, cover and cook, stirring occasionally, until the onions have softened a little, about 4 minutes.",
+      "Stir in the garlic and cook until the garlic is starting to lightly brown, about 2 minutes. Next, add the remaining 1 tablespoon of oil, the tomatoes and the jalape\u00f1o halves, cut sides down. Cook, covered, until the tomatoes begin to lose some body and break down, about 6 minutes.",
+      "Stir in the beans, marinara sauce, cilantro, cumin, oregano, paprika, pepper, 1 teaspoon salt and \u00bd cup water. Cook, covered, for 8 minutes, stirring occasionally.",
+      "Uncover and make 4 small divots in the sauce and crack the eggs into each of the little spaces. Top each egg off with a pinch of salt and cover the pan. Cook the eggs for 7 to 9 minutes, until the whites are cooked and yolks reach your desired level of doneness.",
+      "Take the skillet off the stove, sprinkle with additional cilantro and serve the eggs immediately, with the side of your choice."
+    ],
+    "notes": "Source: NYT Cooking",
+    "tags": [
+      "Stove",
+      "Breakfast",
+      "Dinner"
+    ]
   }
 ]
