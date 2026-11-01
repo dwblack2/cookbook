@@ -5690,5 +5690,38 @@
       "Dinner",
       "Chickpea"
     ]
+  },
+  {
+    "title": "Chimichurri Meatballs",
+    "ready_in": "35 minutes",
+    "servings": "4",
+    "temperature": "",
+    "ingredients": [
+      "FOR THE CHIMICHURRI SAUCE",
+      "1 packed cup parsley leaves and tender stems",
+      "\u00bd packed cup fresh oregano leaves",
+      "3 garlic cloves",
+      "Salt",
+      "\u00bd cup extra-virgin olive oil",
+      "2 tablespoons red wine vinegar",
+      "\u00bd teaspoon crushed red pepper, plus more as needed",
+      "FOR THE MEATBALLS",
+      "1 cup panko bread crumbs",
+      "1 large egg",
+      "Kosher salt (such as Diamond Crystal) or fine sea salt",
+      "1 pound ground beef/chicken (preferably 15 percent fat)",
+      "1 tablespoon extra-virgin olive oil"
+    ],
+    "instructions": [
+      "To make the chimichurri, on your cutting board or in a food processor, combine the parsley, oregano, garlic and a big pinch of salt. Chop or pulse until a coarse, juicy paste forms, then transfer to a medium bowl. Add the oil, vinegar, crushed red pepper and 1 tablespoon water; mix well. Season to taste with salt and more crushed red pepper to taste. (Sauce can be refrigerated for up to 3 days.)",
+      "In a large bowl, stir the panko, egg, 1 teaspoon kosher salt (or \u00bd teaspoon fine sea salt) with \u00bc cup water and \u00bc cup chimichurri until the panko is wet and softened. Add the beef and use your hands to mix until combined.",
+      "Roll the mixture into 12 meatballs (3 tablespoons/2 ounces each) and chill for 5 to 10 minutes to firm slightly.",
+      "Heat the oil in a large, nonstick skillet over medium. Add the meatballs and cook, turning occasionally, until browned and medium-rare, or to desired doneness, 7 to 10 minutes. Serve with remaining chimichurri spooned over top and alongside."
+    ],
+    "notes": "Source: NYT Cooking",
+    "tags": [
+      "Dinner",
+      "Stove"
+    ]
   }
 ]
